@@ -6,9 +6,9 @@
 
 import './bootstrap';
 
-import Vue       from 'vue';
+import Vue from 'vue';
 
-window.Vue       = Vue;
+window.Vue = Vue;
 
 /**
  * The following block of code may be used to automatically register your
@@ -20,6 +20,12 @@ window.Vue       = Vue;
 
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+
+import * as components from '../components/index';
+
+Object.keys(components).forEach((componentName) => {
+    Vue.component(componentName, components[componentName]);
+});
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

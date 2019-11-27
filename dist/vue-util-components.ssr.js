@@ -6,7 +6,7 @@
 //
 
 var script = {
-  name : 'alert',
+  name : 'js-alert',
 
   components : {},
 
@@ -97,7 +97,7 @@ var isOldIE = typeof navigator !== 'undefined' &&
 var __vue_script__ = script;
 
 /* template */
-var __vue_render__ = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"alert"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__ = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-alert"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__ = [];
 
   /* style */
@@ -105,7 +105,7 @@ var __vue_staticRenderFns__ = [];
   /* scoped */
   var __vue_scope_id__ = undefined;
   /* module identifier */
-  var __vue_module_identifier__ = "data-v-20a68742";
+  var __vue_module_identifier__ = "data-v-021fb33c";
   /* functional template */
   var __vue_is_functional_template__ = false;
   /* style inject */
@@ -135,7 +135,7 @@ var __vue_staticRenderFns__ = [];
 //
 
 var script$1 = {
-  name : 'badge',
+  name : 'js-badge',
 
   components : {},
 
@@ -150,7 +150,7 @@ var script$1 = {
 var __vue_script__$1 = script$1;
 
 /* template */
-var __vue_render__$1 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"badge"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$1 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-badge"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$1 = [];
 
   /* style */
@@ -158,7 +158,7 @@ var __vue_staticRenderFns__$1 = [];
   /* scoped */
   var __vue_scope_id__$1 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$1 = "data-v-3816ff06";
+  var __vue_module_identifier__$1 = "data-v-2ddac7ea";
   /* functional template */
   var __vue_is_functional_template__$1 = false;
   /* style inject */
@@ -188,7 +188,7 @@ var __vue_staticRenderFns__$1 = [];
 //
 
 var script$2 = {
-  name : 'breadcrumb',
+  name : 'js-breadcrumb',
 
   components : {},
 
@@ -203,7 +203,7 @@ var script$2 = {
 var __vue_script__$2 = script$2;
 
 /* template */
-var __vue_render__$2 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"breadcrumb"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$2 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-breadcrumb"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$2 = [];
 
   /* style */
@@ -211,7 +211,7 @@ var __vue_staticRenderFns__$2 = [];
   /* scoped */
   var __vue_scope_id__$2 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$2 = "data-v-c93a9ef4";
+  var __vue_module_identifier__$2 = "data-v-0659eaea";
   /* functional template */
   var __vue_is_functional_template__$2 = false;
   /* style inject */
@@ -241,7 +241,7 @@ var __vue_staticRenderFns__$2 = [];
 //
 
 var script$3 = {
-  name : 'button',
+  name : 'js-button',
 
   components : {},
 
@@ -256,7 +256,7 @@ var script$3 = {
 var __vue_script__$3 = script$3;
 
 /* template */
-var __vue_render__$3 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"button"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$3 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-button"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$3 = [];
 
   /* style */
@@ -264,7 +264,7 @@ var __vue_staticRenderFns__$3 = [];
   /* scoped */
   var __vue_scope_id__$3 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$3 = "data-v-b45b3c52";
+  var __vue_module_identifier__$3 = "data-v-ed81b40e";
   /* functional template */
   var __vue_is_functional_template__$3 = false;
   /* style inject */
@@ -294,7 +294,7 @@ var __vue_staticRenderFns__$3 = [];
 //
 
 var script$4 = {
-  name : 'dislike',
+  name : 'js-dislike',
 
   components : {},
 
@@ -309,7 +309,7 @@ var script$4 = {
 var __vue_script__$4 = script$4;
 
 /* template */
-var __vue_render__$4 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"dislike"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$4 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-dislike"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$4 = [];
 
   /* style */
@@ -317,7 +317,7 @@ var __vue_staticRenderFns__$4 = [];
   /* scoped */
   var __vue_scope_id__$4 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$4 = "data-v-767e9870";
+  var __vue_module_identifier__$4 = "data-v-b622d830";
   /* functional template */
   var __vue_is_functional_template__$4 = false;
   /* style inject */
@@ -347,7 +347,7 @@ var __vue_staticRenderFns__$4 = [];
 //
 
 var script$5 = {
-  name : 'emoticon',
+  name : 'js-emoticon',
 
   components : {},
 
@@ -362,7 +362,7 @@ var script$5 = {
 var __vue_script__$5 = script$5;
 
 /* template */
-var __vue_render__$5 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"emoticon"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$5 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-emoticon"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$5 = [];
 
   /* style */
@@ -370,7 +370,7 @@ var __vue_staticRenderFns__$5 = [];
   /* scoped */
   var __vue_scope_id__$5 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$5 = "data-v-b5fcb57a";
+  var __vue_module_identifier__$5 = "data-v-e5d545e6";
   /* functional template */
   var __vue_is_functional_template__$5 = false;
   /* style inject */
@@ -400,7 +400,7 @@ var __vue_staticRenderFns__$5 = [];
 //
 
 var script$6 = {
-  name : 'favorite',
+  name : 'js-favorite',
 
   components : {},
 
@@ -415,7 +415,7 @@ var script$6 = {
 var __vue_script__$6 = script$6;
 
 /* template */
-var __vue_render__$6 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"favorite"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$6 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-favorite"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$6 = [];
 
   /* style */
@@ -423,7 +423,7 @@ var __vue_staticRenderFns__$6 = [];
   /* scoped */
   var __vue_scope_id__$6 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$6 = "data-v-3c2c9fad";
+  var __vue_module_identifier__$6 = "data-v-4041b73a";
   /* functional template */
   var __vue_is_functional_template__$6 = false;
   /* style inject */
@@ -453,7 +453,7 @@ var __vue_staticRenderFns__$6 = [];
 //
 
 var script$7 = {
-  name : 'featured',
+  name : 'js-featured',
 
   components : {},
 
@@ -468,7 +468,7 @@ var script$7 = {
 var __vue_script__$7 = script$7;
 
 /* template */
-var __vue_render__$7 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"featured"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$7 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-featured"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$7 = [];
 
   /* style */
@@ -476,7 +476,7 @@ var __vue_staticRenderFns__$7 = [];
   /* scoped */
   var __vue_scope_id__$7 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$7 = "data-v-d0fe2cca";
+  var __vue_module_identifier__$7 = "data-v-841b5c96";
   /* functional template */
   var __vue_is_functional_template__$7 = false;
   /* style inject */
@@ -506,7 +506,7 @@ var __vue_staticRenderFns__$7 = [];
 //
 
 var script$8 = {
-  name : 'form-input',
+  name : 'js-form-input',
 
   components : {},
 
@@ -521,7 +521,7 @@ var script$8 = {
 var __vue_script__$8 = script$8;
 
 /* template */
-var __vue_render__$8 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"form-input"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$8 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-form-input"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$8 = [];
 
   /* style */
@@ -529,7 +529,7 @@ var __vue_staticRenderFns__$8 = [];
   /* scoped */
   var __vue_scope_id__$8 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$8 = "data-v-acafd9f0";
+  var __vue_module_identifier__$8 = "data-v-c322a5b0";
   /* functional template */
   var __vue_is_functional_template__$8 = false;
   /* style inject */
@@ -559,7 +559,7 @@ var __vue_staticRenderFns__$8 = [];
 //
 
 var script$9 = {
-  name : 'icon',
+  name : 'js-icon',
 
   components : {},
 
@@ -574,7 +574,7 @@ var script$9 = {
 var __vue_script__$9 = script$9;
 
 /* template */
-var __vue_render__$9 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"icon"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$9 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-icon"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$9 = [];
 
   /* style */
@@ -582,7 +582,7 @@ var __vue_staticRenderFns__$9 = [];
   /* scoped */
   var __vue_scope_id__$9 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$9 = "data-v-054557e0";
+  var __vue_module_identifier__$9 = "data-v-3f3e7bc0";
   /* functional template */
   var __vue_is_functional_template__$9 = false;
   /* style inject */
@@ -612,7 +612,7 @@ var __vue_staticRenderFns__$9 = [];
 //
 
 var script$a = {
-  name : 'like',
+  name : 'js-like',
 
   components : {},
 
@@ -627,7 +627,7 @@ var script$a = {
 var __vue_script__$a = script$a;
 
 /* template */
-var __vue_render__$a = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"like"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$a = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-like"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$a = [];
 
   /* style */
@@ -635,7 +635,7 @@ var __vue_staticRenderFns__$a = [];
   /* scoped */
   var __vue_scope_id__$a = undefined;
   /* module identifier */
-  var __vue_module_identifier__$a = "data-v-5c6bc772";
+  var __vue_module_identifier__$a = "data-v-fb623d04";
   /* functional template */
   var __vue_is_functional_template__$a = false;
   /* style inject */
@@ -665,7 +665,7 @@ var __vue_staticRenderFns__$a = [];
 //
 
 var script$b = {
-  name : 'list-item',
+  name : 'js-list-item',
 
   components : {},
 
@@ -680,7 +680,7 @@ var script$b = {
 var __vue_script__$b = script$b;
 
 /* template */
-var __vue_render__$b = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"list-item"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$b = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-list-item"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$b = [];
 
   /* style */
@@ -688,7 +688,7 @@ var __vue_staticRenderFns__$b = [];
   /* scoped */
   var __vue_scope_id__$b = undefined;
   /* module identifier */
-  var __vue_module_identifier__$b = "data-v-6e6923b6";
+  var __vue_module_identifier__$b = "data-v-b212502a";
   /* functional template */
   var __vue_is_functional_template__$b = false;
   /* style inject */
@@ -718,7 +718,7 @@ var __vue_staticRenderFns__$b = [];
 //
 
 var script$c = {
-  name : 'menu-entry',
+  name : 'js-menu-entry',
 
   components : {},
 
@@ -733,7 +733,7 @@ var script$c = {
 var __vue_script__$c = script$c;
 
 /* template */
-var __vue_render__$c = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"menu-entry"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$c = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-menu-entry"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$c = [];
 
   /* style */
@@ -741,7 +741,7 @@ var __vue_staticRenderFns__$c = [];
   /* scoped */
   var __vue_scope_id__$c = undefined;
   /* module identifier */
-  var __vue_module_identifier__$c = "data-v-093f23f6";
+  var __vue_module_identifier__$c = "data-v-d3cfb9ea";
   /* functional template */
   var __vue_is_functional_template__$c = false;
   /* style inject */
@@ -771,7 +771,7 @@ var __vue_staticRenderFns__$c = [];
 //
 
 var script$d = {
-  name : 'post',
+  name : 'js-post',
 
   components : {},
 
@@ -786,7 +786,7 @@ var script$d = {
 var __vue_script__$d = script$d;
 
 /* template */
-var __vue_render__$d = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"post"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$d = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-post"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$d = [];
 
   /* style */
@@ -794,7 +794,7 @@ var __vue_staticRenderFns__$d = [];
   /* scoped */
   var __vue_scope_id__$d = undefined;
   /* module identifier */
-  var __vue_module_identifier__$d = "data-v-862dc5ae";
+  var __vue_module_identifier__$d = "data-v-b0fd3d32";
   /* functional template */
   var __vue_is_functional_template__$d = false;
   /* style inject */
@@ -824,7 +824,7 @@ var __vue_staticRenderFns__$d = [];
 //
 
 var script$e = {
-  name : 'spinner',
+  name : 'js-spinner',
 
   components : {},
 
@@ -839,7 +839,7 @@ var script$e = {
 var __vue_script__$e = script$e;
 
 /* template */
-var __vue_render__$e = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"spinner"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$e = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-spinner"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$e = [];
 
   /* style */
@@ -847,7 +847,7 @@ var __vue_staticRenderFns__$e = [];
   /* scoped */
   var __vue_scope_id__$e = undefined;
   /* module identifier */
-  var __vue_module_identifier__$e = "data-v-7145ea3c";
+  var __vue_module_identifier__$e = "data-v-c8c96218";
   /* functional template */
   var __vue_is_functional_template__$e = false;
   /* style inject */
@@ -877,7 +877,7 @@ var __vue_staticRenderFns__$e = [];
 //
 
 var script$f = {
-  name : 'tab',
+  name : 'js-tab',
 
   components : {},
 
@@ -892,7 +892,7 @@ var script$f = {
 var __vue_script__$f = script$f;
 
 /* template */
-var __vue_render__$f = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tab"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$f = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-tab"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$f = [];
 
   /* style */
@@ -900,7 +900,7 @@ var __vue_staticRenderFns__$f = [];
   /* scoped */
   var __vue_scope_id__$f = undefined;
   /* module identifier */
-  var __vue_module_identifier__$f = "data-v-68801c38";
+  var __vue_module_identifier__$f = "data-v-38968f78";
   /* functional template */
   var __vue_is_functional_template__$f = false;
   /* style inject */
@@ -930,7 +930,7 @@ var __vue_staticRenderFns__$f = [];
 //
 
 var script$g = {
-  name : 'table-body',
+  name : 'js-table-body',
 
   components : {},
 
@@ -945,7 +945,7 @@ var script$g = {
 var __vue_script__$g = script$g;
 
 /* template */
-var __vue_render__$g = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"table-body"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$g = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-table-body"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$g = [];
 
   /* style */
@@ -953,7 +953,7 @@ var __vue_staticRenderFns__$g = [];
   /* scoped */
   var __vue_scope_id__$g = undefined;
   /* module identifier */
-  var __vue_module_identifier__$g = "data-v-7418cf70";
+  var __vue_module_identifier__$g = "data-v-067d9fe8";
   /* functional template */
   var __vue_is_functional_template__$g = false;
   /* style inject */
@@ -983,7 +983,7 @@ var __vue_staticRenderFns__$g = [];
 //
 
 var script$h = {
-  name : 'table-foot',
+  name : 'js-table-foot',
 
   components : {},
 
@@ -998,7 +998,7 @@ var script$h = {
 var __vue_script__$h = script$h;
 
 /* template */
-var __vue_render__$h = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"table-foot"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$h = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-table-foot"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$h = [];
 
   /* style */
@@ -1006,7 +1006,7 @@ var __vue_staticRenderFns__$h = [];
   /* scoped */
   var __vue_scope_id__$h = undefined;
   /* module identifier */
-  var __vue_module_identifier__$h = "data-v-2bfad508";
+  var __vue_module_identifier__$h = "data-v-63664398";
   /* functional template */
   var __vue_is_functional_template__$h = false;
   /* style inject */
@@ -1036,7 +1036,7 @@ var __vue_staticRenderFns__$h = [];
 //
 
 var script$i = {
-  name : 'table-head',
+  name : 'js-table-head',
 
   components : {},
 
@@ -1051,7 +1051,7 @@ var script$i = {
 var __vue_script__$i = script$i;
 
 /* template */
-var __vue_render__$i = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"table-head"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$i = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-table-head"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$i = [];
 
   /* style */
@@ -1059,7 +1059,7 @@ var __vue_staticRenderFns__$i = [];
   /* scoped */
   var __vue_scope_id__$i = undefined;
   /* module identifier */
-  var __vue_module_identifier__$i = "data-v-7c460c0a";
+  var __vue_module_identifier__$i = "data-v-f8a76e34";
   /* functional template */
   var __vue_is_functional_template__$i = false;
   /* style inject */
@@ -1090,7 +1090,7 @@ var __vue_staticRenderFns__$i = [];
 
   // @info maybe redundant to figure
 var script$j = {
-  name : 'thumbnail',
+  name : 'js-thumbnail',
 
   components : {},
 
@@ -1105,7 +1105,7 @@ var script$j = {
 var __vue_script__$j = script$j;
 
 /* template */
-var __vue_render__$j = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"thumbnail"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$j = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-thumbnail"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$j = [];
 
   /* style */
@@ -1113,7 +1113,7 @@ var __vue_staticRenderFns__$j = [];
   /* scoped */
   var __vue_scope_id__$j = undefined;
   /* module identifier */
-  var __vue_module_identifier__$j = "data-v-7c0d624b";
+  var __vue_module_identifier__$j = "data-v-2374dec5";
   /* functional template */
   var __vue_is_functional_template__$j = false;
   /* style inject */
@@ -1143,7 +1143,7 @@ var __vue_staticRenderFns__$j = [];
 //
 
 var script$k = {
-  name : 'video',
+  name : 'js-video',
 
   components : {},
 
@@ -1158,7 +1158,7 @@ var script$k = {
 var __vue_script__$k = script$k;
 
 /* template */
-var __vue_render__$k = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"video"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$k = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-video"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$k = [];
 
   /* style */
@@ -1166,7 +1166,7 @@ var __vue_staticRenderFns__$k = [];
   /* scoped */
   var __vue_scope_id__$k = undefined;
   /* module identifier */
-  var __vue_module_identifier__$k = "data-v-46c79ede";
+  var __vue_module_identifier__$k = "data-v-7b048512";
   /* functional template */
   var __vue_is_functional_template__$k = false;
   /* style inject */
@@ -1196,7 +1196,7 @@ var __vue_staticRenderFns__$k = [];
 //
 
 var script$l = {
-  name : 'accordion-menu',
+  name : 'js-accordion-menu',
 
   components : {},
 
@@ -1211,7 +1211,7 @@ var script$l = {
 var __vue_script__$l = script$l;
 
 /* template */
-var __vue_render__$l = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"accordion-menu"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$l = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-accordion-menu"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$l = [];
 
   /* style */
@@ -1219,7 +1219,7 @@ var __vue_staticRenderFns__$l = [];
   /* scoped */
   var __vue_scope_id__$l = undefined;
   /* module identifier */
-  var __vue_module_identifier__$l = "data-v-0368ff76";
+  var __vue_module_identifier__$l = "data-v-3553de6a";
   /* functional template */
   var __vue_is_functional_template__$l = false;
   /* style inject */
@@ -1249,7 +1249,7 @@ var __vue_staticRenderFns__$l = [];
 //
 
 var script$m = {
-  name : 'breadcrumbs',
+  name : 'js-breadcrumbs',
 
   components : {},
 
@@ -1264,7 +1264,7 @@ var script$m = {
 var __vue_script__$m = script$m;
 
 /* template */
-var __vue_render__$m = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"breadcrumbs"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$m = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-breadcrumbs"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$m = [];
 
   /* style */
@@ -1272,7 +1272,7 @@ var __vue_staticRenderFns__$m = [];
   /* scoped */
   var __vue_scope_id__$m = undefined;
   /* module identifier */
-  var __vue_module_identifier__$m = "data-v-01f62593";
+  var __vue_module_identifier__$m = "data-v-339bde86";
   /* functional template */
   var __vue_is_functional_template__$m = false;
   /* style inject */
@@ -1302,7 +1302,7 @@ var __vue_staticRenderFns__$m = [];
 //
 
 var script$n = {
-  name : 'button-group',
+  name : 'js-button-group',
 
   components : {},
 
@@ -1317,7 +1317,7 @@ var script$n = {
 var __vue_script__$n = script$n;
 
 /* template */
-var __vue_render__$n = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"button-group"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$n = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-button-group"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$n = [];
 
   /* style */
@@ -1325,7 +1325,7 @@ var __vue_staticRenderFns__$n = [];
   /* scoped */
   var __vue_scope_id__$n = undefined;
   /* module identifier */
-  var __vue_module_identifier__$n = "data-v-78e1ccb6";
+  var __vue_module_identifier__$n = "data-v-08a3076b";
   /* functional template */
   var __vue_is_functional_template__$n = false;
   /* style inject */
@@ -1355,7 +1355,7 @@ var __vue_staticRenderFns__$n = [];
 //
 
 var script$o = {
-  name : 'carousel',
+  name : 'js-carousel',
 
   components : {},
 
@@ -1370,7 +1370,7 @@ var script$o = {
 var __vue_script__$o = script$o;
 
 /* template */
-var __vue_render__$o = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"carousel"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$o = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-carousel"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$o = [];
 
   /* style */
@@ -1378,7 +1378,7 @@ var __vue_staticRenderFns__$o = [];
   /* scoped */
   var __vue_scope_id__$o = undefined;
   /* module identifier */
-  var __vue_module_identifier__$o = "data-v-b9d50e2e";
+  var __vue_module_identifier__$o = "data-v-3f7d9da7";
   /* functional template */
   var __vue_is_functional_template__$o = false;
   /* style inject */
@@ -1408,7 +1408,7 @@ var __vue_staticRenderFns__$o = [];
 //
 
 var script$p = {
-  name : 'drill-down-menu',
+  name : 'js-drill-down-menu',
 
   components : {},
 
@@ -1423,7 +1423,7 @@ var script$p = {
 var __vue_script__$p = script$p;
 
 /* template */
-var __vue_render__$p = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"drill-down-menu"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$p = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-drill-down-menu"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$p = [];
 
   /* style */
@@ -1431,7 +1431,7 @@ var __vue_staticRenderFns__$p = [];
   /* scoped */
   var __vue_scope_id__$p = undefined;
   /* module identifier */
-  var __vue_module_identifier__$p = "data-v-153cf7fb";
+  var __vue_module_identifier__$p = "data-v-1186a955";
   /* functional template */
   var __vue_is_functional_template__$p = false;
   /* style inject */
@@ -1461,7 +1461,7 @@ var __vue_staticRenderFns__$p = [];
 //
 
 var script$q = {
-  name : 'drop-down-menu',
+  name : 'js-drop-down-menu',
 
   components : {},
 
@@ -1476,7 +1476,7 @@ var script$q = {
 var __vue_script__$q = script$q;
 
 /* template */
-var __vue_render__$q = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"drop-down-menu"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$q = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-drop-down-menu"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$q = [];
 
   /* style */
@@ -1484,7 +1484,7 @@ var __vue_staticRenderFns__$q = [];
   /* scoped */
   var __vue_scope_id__$q = undefined;
   /* module identifier */
-  var __vue_module_identifier__$q = "data-v-03b57e86";
+  var __vue_module_identifier__$q = "data-v-5e5d9d53";
   /* functional template */
   var __vue_is_functional_template__$q = false;
   /* style inject */
@@ -1514,7 +1514,7 @@ var __vue_staticRenderFns__$q = [];
 //
 
 var script$r = {
-  name : 'footer',
+  name : 'js-footer',
 
   components : {},
 
@@ -1529,7 +1529,7 @@ var script$r = {
 var __vue_script__$r = script$r;
 
 /* template */
-var __vue_render__$r = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"footer"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$r = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-footer"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$r = [];
 
   /* style */
@@ -1537,7 +1537,7 @@ var __vue_staticRenderFns__$r = [];
   /* scoped */
   var __vue_scope_id__$r = undefined;
   /* module identifier */
-  var __vue_module_identifier__$r = "data-v-155bc824";
+  var __vue_module_identifier__$r = "data-v-3b2446fc";
   /* functional template */
   var __vue_is_functional_template__$r = false;
   /* style inject */
@@ -1567,7 +1567,7 @@ var __vue_staticRenderFns__$r = [];
 //
 
 var script$s = {
-  name : 'form',
+  name : 'js-form',
 
   components : {},
 
@@ -1582,7 +1582,7 @@ var script$s = {
 var __vue_script__$s = script$s;
 
 /* template */
-var __vue_render__$s = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"form"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$s = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-form"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$s = [];
 
   /* style */
@@ -1590,7 +1590,7 @@ var __vue_staticRenderFns__$s = [];
   /* scoped */
   var __vue_scope_id__$s = undefined;
   /* module identifier */
-  var __vue_module_identifier__$s = "data-v-1346a405";
+  var __vue_module_identifier__$s = "data-v-7f45310b";
   /* functional template */
   var __vue_is_functional_template__$s = false;
   /* style inject */
@@ -1620,7 +1620,7 @@ var __vue_staticRenderFns__$s = [];
 //
 
 var script$t = {
-  name : 'form-input-group',
+  name : 'js-form-input-group',
 
   components : {},
 
@@ -1635,7 +1635,7 @@ var script$t = {
 var __vue_script__$t = script$t;
 
 /* template */
-var __vue_render__$t = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"form-input-group"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$t = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-form-input-group"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$t = [];
 
   /* style */
@@ -1643,7 +1643,7 @@ var __vue_staticRenderFns__$t = [];
   /* scoped */
   var __vue_scope_id__$t = undefined;
   /* module identifier */
-  var __vue_module_identifier__$t = "data-v-56e4b9d6";
+  var __vue_module_identifier__$t = "data-v-ee98a2cc";
   /* functional template */
   var __vue_is_functional_template__$t = false;
   /* style inject */
@@ -1673,7 +1673,7 @@ var __vue_staticRenderFns__$t = [];
 //
 
 var script$u = {
-  name : 'gallery',
+  name : 'js-gallery',
 
   components : {},
 
@@ -1688,7 +1688,7 @@ var script$u = {
 var __vue_script__$u = script$u;
 
 /* template */
-var __vue_render__$u = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"gallery"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$u = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-gallery"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$u = [];
 
   /* style */
@@ -1696,7 +1696,7 @@ var __vue_staticRenderFns__$u = [];
   /* scoped */
   var __vue_scope_id__$u = undefined;
   /* module identifier */
-  var __vue_module_identifier__$u = "data-v-e8017f56";
+  var __vue_module_identifier__$u = "data-v-c434b48a";
   /* functional template */
   var __vue_is_functional_template__$u = false;
   /* style inject */
@@ -1726,7 +1726,7 @@ var __vue_staticRenderFns__$u = [];
 //
 
 var script$v = {
-  name : 'header',
+  name : 'js-header',
 
   components : {},
 
@@ -1741,7 +1741,7 @@ var script$v = {
 var __vue_script__$v = script$v;
 
 /* template */
-var __vue_render__$v = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"header"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$v = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-header"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$v = [];
 
   /* style */
@@ -1749,7 +1749,7 @@ var __vue_staticRenderFns__$v = [];
   /* scoped */
   var __vue_scope_id__$v = undefined;
   /* module identifier */
-  var __vue_module_identifier__$v = "data-v-9b09e008";
+  var __vue_module_identifier__$v = "data-v-2c7ebdb4";
   /* functional template */
   var __vue_is_functional_template__$v = false;
   /* style inject */
@@ -1779,7 +1779,7 @@ var __vue_staticRenderFns__$v = [];
 //
 
 var script$w = {
-  name : 'jumbotron',
+  name : 'js-jumbotron',
 
   components : {},
 
@@ -1794,7 +1794,7 @@ var script$w = {
 var __vue_script__$w = script$w;
 
 /* template */
-var __vue_render__$w = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"jumbotron"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$w = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-jumbotron"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$w = [];
 
   /* style */
@@ -1802,7 +1802,7 @@ var __vue_staticRenderFns__$w = [];
   /* scoped */
   var __vue_scope_id__$w = undefined;
   /* module identifier */
-  var __vue_module_identifier__$w = "data-v-8fa4e7a2";
+  var __vue_module_identifier__$w = "data-v-c6e259e8";
   /* functional template */
   var __vue_is_functional_template__$w = false;
   /* style inject */
@@ -1832,7 +1832,7 @@ var __vue_staticRenderFns__$w = [];
 //
 
 var script$x = {
-  name : 'list',
+  name : 'js-list',
 
   components : {},
 
@@ -1847,7 +1847,7 @@ var script$x = {
 var __vue_script__$x = script$x;
 
 /* template */
-var __vue_render__$x = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"list"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$x = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-list"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$x = [];
 
   /* style */
@@ -1855,7 +1855,7 @@ var __vue_staticRenderFns__$x = [];
   /* scoped */
   var __vue_scope_id__$x = undefined;
   /* module identifier */
-  var __vue_module_identifier__$x = "data-v-49b793ab";
+  var __vue_module_identifier__$x = "data-v-71f089a5";
   /* functional template */
   var __vue_is_functional_template__$x = false;
   /* style inject */
@@ -1885,7 +1885,7 @@ var __vue_staticRenderFns__$x = [];
 //
 
 var script$y = {
-  name : 'menu',
+  name : 'js-menu',
 
   components : {},
 
@@ -1900,7 +1900,7 @@ var script$y = {
 var __vue_script__$y = script$y;
 
 /* template */
-var __vue_render__$y = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"menu"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$y = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-menu"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$y = [];
 
   /* style */
@@ -1908,7 +1908,7 @@ var __vue_staticRenderFns__$y = [];
   /* scoped */
   var __vue_scope_id__$y = undefined;
   /* module identifier */
-  var __vue_module_identifier__$y = "data-v-1d6f77aa";
+  var __vue_module_identifier__$y = "data-v-d4776374";
   /* functional template */
   var __vue_is_functional_template__$y = false;
   /* style inject */
@@ -1938,7 +1938,7 @@ var __vue_staticRenderFns__$y = [];
 //
 
 var script$z = {
-  name : 'modal',
+  name : 'js-modal',
 
   components : {},
 
@@ -1953,7 +1953,7 @@ var script$z = {
 var __vue_script__$z = script$z;
 
 /* template */
-var __vue_render__$z = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"modal"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$z = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-modal"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$z = [];
 
   /* style */
@@ -1961,7 +1961,7 @@ var __vue_staticRenderFns__$z = [];
   /* scoped */
   var __vue_scope_id__$z = undefined;
   /* module identifier */
-  var __vue_module_identifier__$z = "data-v-58064760";
+  var __vue_module_identifier__$z = "data-v-320eeb60";
   /* functional template */
   var __vue_is_functional_template__$z = false;
   /* style inject */
@@ -1991,7 +1991,7 @@ var __vue_staticRenderFns__$z = [];
 //
 
 var script$A = {
-  name : 'navigation',
+  name : 'js-navigation',
 
   components : {},
 
@@ -2006,7 +2006,7 @@ var script$A = {
 var __vue_script__$A = script$A;
 
 /* template */
-var __vue_render__$A = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"navigation"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$A = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-navigation"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$A = [];
 
   /* style */
@@ -2014,7 +2014,7 @@ var __vue_staticRenderFns__$A = [];
   /* scoped */
   var __vue_scope_id__$A = undefined;
   /* module identifier */
-  var __vue_module_identifier__$A = "data-v-45089275";
+  var __vue_module_identifier__$A = "data-v-0191089b";
   /* functional template */
   var __vue_is_functional_template__$A = false;
   /* style inject */
@@ -2044,7 +2044,7 @@ var __vue_staticRenderFns__$A = [];
 //
 
 var script$B = {
-  name : 'navigation-bar',
+  name : 'js-navigation-bar',
 
   components : {},
 
@@ -2059,7 +2059,7 @@ var script$B = {
 var __vue_script__$B = script$B;
 
 /* template */
-var __vue_render__$B = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"navigation-bar"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$B = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-navigation-bar"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$B = [];
 
   /* style */
@@ -2067,7 +2067,7 @@ var __vue_staticRenderFns__$B = [];
   /* scoped */
   var __vue_scope_id__$B = undefined;
   /* module identifier */
-  var __vue_module_identifier__$B = "data-v-719cfb2f";
+  var __vue_module_identifier__$B = "data-v-730d45a1";
   /* functional template */
   var __vue_is_functional_template__$B = false;
   /* style inject */
@@ -2097,7 +2097,7 @@ var __vue_staticRenderFns__$B = [];
 //
 
 var script$C = {
-  name : 'off-canvas',
+  name : 'js-off-canvas',
 
   components : {},
 
@@ -2112,7 +2112,7 @@ var script$C = {
 var __vue_script__$C = script$C;
 
 /* template */
-var __vue_render__$C = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"off-canvas"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$C = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-off-canvas"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$C = [];
 
   /* style */
@@ -2120,7 +2120,7 @@ var __vue_staticRenderFns__$C = [];
   /* scoped */
   var __vue_scope_id__$C = undefined;
   /* module identifier */
-  var __vue_module_identifier__$C = "data-v-3ecc0d13";
+  var __vue_module_identifier__$C = "data-v-fb08d586";
   /* functional template */
   var __vue_is_functional_template__$C = false;
   /* style inject */
@@ -2150,7 +2150,7 @@ var __vue_staticRenderFns__$C = [];
 //
 
 var script$D = {
-  name : 'pagination',
+  name : 'js-pagination',
 
   components : {},
 
@@ -2165,7 +2165,7 @@ var script$D = {
 var __vue_script__$D = script$D;
 
 /* template */
-var __vue_render__$D = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"pagination"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$D = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-pagination"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$D = [];
 
   /* style */
@@ -2173,7 +2173,7 @@ var __vue_staticRenderFns__$D = [];
   /* scoped */
   var __vue_scope_id__$D = undefined;
   /* module identifier */
-  var __vue_module_identifier__$D = "data-v-0d4d4cef";
+  var __vue_module_identifier__$D = "data-v-bdf2c03e";
   /* functional template */
   var __vue_is_functional_template__$D = false;
   /* style inject */
@@ -2203,7 +2203,7 @@ var __vue_staticRenderFns__$D = [];
 //
 
 var script$E = {
-  name : 'progress-bar',
+  name : 'js-progress-bar',
 
   components : {},
 
@@ -2218,7 +2218,7 @@ var script$E = {
 var __vue_script__$E = script$E;
 
 /* template */
-var __vue_render__$E = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"progress-bar"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$E = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-progress-bar"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$E = [];
 
   /* style */
@@ -2226,7 +2226,7 @@ var __vue_staticRenderFns__$E = [];
   /* scoped */
   var __vue_scope_id__$E = undefined;
   /* module identifier */
-  var __vue_module_identifier__$E = "data-v-4c506d96";
+  var __vue_module_identifier__$E = "data-v-48634e4c";
   /* functional template */
   var __vue_is_functional_template__$E = false;
   /* style inject */
@@ -2256,7 +2256,7 @@ var __vue_staticRenderFns__$E = [];
 //
 
 var script$F = {
-  name : 'rating',
+  name : 'js-rating',
 
   components : {},
 
@@ -2271,7 +2271,7 @@ var script$F = {
 var __vue_script__$F = script$F;
 
 /* template */
-var __vue_render__$F = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"rating"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$F = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-rating"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$F = [];
 
   /* style */
@@ -2279,7 +2279,7 @@ var __vue_staticRenderFns__$F = [];
   /* scoped */
   var __vue_scope_id__$F = undefined;
   /* module identifier */
-  var __vue_module_identifier__$F = "data-v-476d08ec";
+  var __vue_module_identifier__$F = "data-v-776ec278";
   /* functional template */
   var __vue_is_functional_template__$F = false;
   /* style inject */
@@ -2309,7 +2309,7 @@ var __vue_staticRenderFns__$F = [];
 //
 
 var script$G = {
-  name : 'relative-embed',
+  name : 'js-relative-embed',
 
   components : {},
 
@@ -2324,7 +2324,7 @@ var script$G = {
 var __vue_script__$G = script$G;
 
 /* template */
-var __vue_render__$G = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"relative-embed"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$G = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-relative-embed"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$G = [];
 
   /* style */
@@ -2332,7 +2332,7 @@ var __vue_staticRenderFns__$G = [];
   /* scoped */
   var __vue_scope_id__$G = undefined;
   /* module identifier */
-  var __vue_module_identifier__$G = "data-v-fa555f1e";
+  var __vue_module_identifier__$G = "data-v-b7a5bdc2";
   /* functional template */
   var __vue_is_functional_template__$G = false;
   /* style inject */
@@ -2362,7 +2362,7 @@ var __vue_staticRenderFns__$G = [];
 //
 
 var script$H = {
-  name : 'slider',
+  name : 'js-slider',
 
   components : {},
 
@@ -2377,7 +2377,7 @@ var script$H = {
 var __vue_script__$H = script$H;
 
 /* template */
-var __vue_render__$H = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"slider"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$H = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-slider"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$H = [];
 
   /* style */
@@ -2385,7 +2385,7 @@ var __vue_staticRenderFns__$H = [];
   /* scoped */
   var __vue_scope_id__$H = undefined;
   /* module identifier */
-  var __vue_module_identifier__$H = "data-v-77f6b3a8";
+  var __vue_module_identifier__$H = "data-v-60ca9a88";
   /* functional template */
   var __vue_is_functional_template__$H = false;
   /* style inject */
@@ -2415,7 +2415,7 @@ var __vue_staticRenderFns__$H = [];
 //
 
 var script$I = {
-  name : 'switch',
+  name : 'js-switch',
 
   components : {},
 
@@ -2430,7 +2430,7 @@ var script$I = {
 var __vue_script__$I = script$I;
 
 /* template */
-var __vue_render__$I = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"switch"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$I = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-switch"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$I = [];
 
   /* style */
@@ -2438,7 +2438,7 @@ var __vue_staticRenderFns__$I = [];
   /* scoped */
   var __vue_scope_id__$I = undefined;
   /* module identifier */
-  var __vue_module_identifier__$I = "data-v-68e4bad5";
+  var __vue_module_identifier__$I = "data-v-3b0afc3b";
   /* functional template */
   var __vue_is_functional_template__$I = false;
   /* style inject */
@@ -2468,7 +2468,7 @@ var __vue_staticRenderFns__$I = [];
 //
 
 var script$J = {
-  name : 'table',
+  name : 'js-table',
 
   components : {},
 
@@ -2483,7 +2483,7 @@ var script$J = {
 var __vue_script__$J = script$J;
 
 /* template */
-var __vue_render__$J = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"table"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$J = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-table"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$J = [];
 
   /* style */
@@ -2491,7 +2491,7 @@ var __vue_staticRenderFns__$J = [];
   /* scoped */
   var __vue_scope_id__$J = undefined;
   /* module identifier */
-  var __vue_module_identifier__$J = "data-v-1cfb6e11";
+  var __vue_module_identifier__$J = "data-v-1d18527f";
   /* functional template */
   var __vue_is_functional_template__$J = false;
   /* style inject */
@@ -2521,7 +2521,7 @@ var __vue_staticRenderFns__$J = [];
 //
 
 var script$K = {
-  name : 'tabs',
+  name : 'js-tabs',
 
   components : {},
 
@@ -2536,7 +2536,7 @@ var script$K = {
 var __vue_script__$K = script$K;
 
 /* template */
-var __vue_render__$K = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tabs"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$K = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-tabs"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$K = [];
 
   /* style */
@@ -2544,7 +2544,7 @@ var __vue_staticRenderFns__$K = [];
   /* scoped */
   var __vue_scope_id__$K = undefined;
   /* module identifier */
-  var __vue_module_identifier__$K = "data-v-282738cb";
+  var __vue_module_identifier__$K = "data-v-d2a69ef6";
   /* functional template */
   var __vue_is_functional_template__$K = false;
   /* style inject */
@@ -2574,7 +2574,7 @@ var __vue_staticRenderFns__$K = [];
 //
 
 var script$L = {
-  name : 'toast',
+  name : 'js-toast',
 
   components : {},
 
@@ -2589,7 +2589,7 @@ var script$L = {
 var __vue_script__$L = script$L;
 
 /* template */
-var __vue_render__$L = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"toast"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$L = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-toast"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$L = [];
 
   /* style */
@@ -2597,7 +2597,7 @@ var __vue_staticRenderFns__$L = [];
   /* scoped */
   var __vue_scope_id__$L = undefined;
   /* module identifier */
-  var __vue_module_identifier__$L = "data-v-2665fc0a";
+  var __vue_module_identifier__$L = "data-v-016aee66";
   /* functional template */
   var __vue_is_functional_template__$L = false;
   /* style inject */
@@ -2627,7 +2627,7 @@ var __vue_staticRenderFns__$L = [];
 //
 
 var script$M = {
-  name : 'tooltip',
+  name : 'js-tooltip',
 
   components : {},
 
@@ -2642,7 +2642,7 @@ var script$M = {
 var __vue_script__$M = script$M;
 
 /* template */
-var __vue_render__$M = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tooltip"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$M = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-tooltip"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$M = [];
 
   /* style */
@@ -2650,7 +2650,7 @@ var __vue_staticRenderFns__$M = [];
   /* scoped */
   var __vue_scope_id__$M = undefined;
   /* module identifier */
-  var __vue_module_identifier__$M = "data-v-d0980a34";
+  var __vue_module_identifier__$M = "data-v-3dfeedec";
   /* functional template */
   var __vue_is_functional_template__$M = false;
   /* style inject */
@@ -2680,7 +2680,7 @@ var __vue_staticRenderFns__$M = [];
 //
 
 var script$N = {
-  name : 'top-bar',
+  name : 'js-top-bar',
 
   components : {},
 
@@ -2695,7 +2695,7 @@ var script$N = {
 var __vue_script__$N = script$N;
 
 /* template */
-var __vue_render__$N = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"top-bar"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$N = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-top-bar"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$N = [];
 
   /* style */
@@ -2703,7 +2703,7 @@ var __vue_staticRenderFns__$N = [];
   /* scoped */
   var __vue_scope_id__$N = undefined;
   /* module identifier */
-  var __vue_module_identifier__$N = "data-v-2cdb1104";
+  var __vue_module_identifier__$N = "data-v-15ee0d1c";
   /* functional template */
   var __vue_is_functional_template__$N = false;
   /* style inject */
@@ -2726,7 +2726,7 @@ var __vue_staticRenderFns__$N = [];
     undefined,
     undefined
   );// Elements
-var components=/*#__PURE__*/Object.freeze({__proto__:null,Alert: __vue_component__,Badge: __vue_component__$1,Breadcrumb: __vue_component__$2,Button: __vue_component__$3,Dislike: __vue_component__$4,Emoticon: __vue_component__$5,Favorite: __vue_component__$6,Featured: __vue_component__$7,FormInput: __vue_component__$8,Icon: __vue_component__$9,Like: __vue_component__$a,ListItem: __vue_component__$b,MenuEntry: __vue_component__$c,Post: __vue_component__$d,Spinner: __vue_component__$e,Tab: __vue_component__$f,TableBody: __vue_component__$g,TableFoot: __vue_component__$h,TableHead: __vue_component__$i,Thumbnail: __vue_component__$j,Video: __vue_component__$k,AccordionMenu: __vue_component__$l,Breadcrumbs: __vue_component__$m,ButtonGroup: __vue_component__$n,Carousel: __vue_component__$o,DrillDownMenu: __vue_component__$p,DropDownMenu: __vue_component__$q,Footer: __vue_component__$r,Form: __vue_component__$s,FormInputGroup: __vue_component__$t,Gallery: __vue_component__$u,Header: __vue_component__$v,Jumbotron: __vue_component__$w,List: __vue_component__$x,Menu: __vue_component__$y,Modal: __vue_component__$z,Navigation: __vue_component__$A,NavigationBar: __vue_component__$B,OffCanvas: __vue_component__$C,Pagination: __vue_component__$D,ProgressBar: __vue_component__$E,Rating: __vue_component__$F,RelativeEmbed: __vue_component__$G,Slider: __vue_component__$H,Switch: __vue_component__$I,Table: __vue_component__$J,Tabs: __vue_component__$K,Toast: __vue_component__$L,Tooltip: __vue_component__$M,TopBar: __vue_component__$N});//// Wrapper (internal)
+var components=/*#__PURE__*/Object.freeze({__proto__:null,JsAlert: __vue_component__,JsBadge: __vue_component__$1,JsBreadcrumb: __vue_component__$2,JsButton: __vue_component__$3,JsDislike: __vue_component__$4,JsEmoticon: __vue_component__$5,JsFavorite: __vue_component__$6,JsFeatured: __vue_component__$7,JsFormInput: __vue_component__$8,JsIcon: __vue_component__$9,JsLike: __vue_component__$a,JsListItem: __vue_component__$b,JsMenuEntry: __vue_component__$c,JsPost: __vue_component__$d,JsSpinner: __vue_component__$e,JsTab: __vue_component__$f,JsTableBody: __vue_component__$g,JsTableFoot: __vue_component__$h,JsTableHead: __vue_component__$i,JsThumbnail: __vue_component__$j,JsVideo: __vue_component__$k,JsAccordionMenu: __vue_component__$l,JsBreadcrumbs: __vue_component__$m,JsButtonGroup: __vue_component__$n,JsCarousel: __vue_component__$o,JsDrillDownMenu: __vue_component__$p,JsDropDownMenu: __vue_component__$q,JsFooter: __vue_component__$r,JsForm: __vue_component__$s,JsFormInputGroup: __vue_component__$t,JsGallery: __vue_component__$u,JsHeader: __vue_component__$v,JsJumbotron: __vue_component__$w,JsList: __vue_component__$x,JsMenu: __vue_component__$y,JsModal: __vue_component__$z,JsNavigation: __vue_component__$A,JsNavigationBar: __vue_component__$B,JsOffCanvas: __vue_component__$C,JsPagination: __vue_component__$D,JsProgressBar: __vue_component__$E,JsRating: __vue_component__$F,JsRelativeEmbed: __vue_component__$G,JsSlider: __vue_component__$H,JsSwitch: __vue_component__$I,JsTable: __vue_component__$J,JsTabs: __vue_component__$K,JsToast: __vue_component__$L,JsTooltip: __vue_component__$M,JsTopBar: __vue_component__$N});//// Wrapper (internal)
 
 // compose components into init
 function install(Vue) {
@@ -2764,4 +2764,4 @@ if (
     && DIPackage.hasOwnProperty("use")
 ) {
     DIPackage.use(plugin);
-}exports.AccordionMenu=__vue_component__$l;exports.Alert=__vue_component__;exports.Badge=__vue_component__$1;exports.Breadcrumb=__vue_component__$2;exports.Breadcrumbs=__vue_component__$m;exports.Button=__vue_component__$3;exports.ButtonGroup=__vue_component__$n;exports.Carousel=__vue_component__$o;exports.Dislike=__vue_component__$4;exports.DrillDownMenu=__vue_component__$p;exports.DropDownMenu=__vue_component__$q;exports.Emoticon=__vue_component__$5;exports.Favorite=__vue_component__$6;exports.Featured=__vue_component__$7;exports.Footer=__vue_component__$r;exports.Form=__vue_component__$s;exports.FormInput=__vue_component__$8;exports.FormInputGroup=__vue_component__$t;exports.Gallery=__vue_component__$u;exports.Header=__vue_component__$v;exports.Icon=__vue_component__$9;exports.Jumbotron=__vue_component__$w;exports.Like=__vue_component__$a;exports.List=__vue_component__$x;exports.ListItem=__vue_component__$b;exports.Menu=__vue_component__$y;exports.MenuEntry=__vue_component__$c;exports.Modal=__vue_component__$z;exports.Navigation=__vue_component__$A;exports.NavigationBar=__vue_component__$B;exports.OffCanvas=__vue_component__$C;exports.Pagination=__vue_component__$D;exports.Post=__vue_component__$d;exports.ProgressBar=__vue_component__$E;exports.Rating=__vue_component__$F;exports.RelativeEmbed=__vue_component__$G;exports.Slider=__vue_component__$H;exports.Spinner=__vue_component__$e;exports.Switch=__vue_component__$I;exports.Tab=__vue_component__$f;exports.Table=__vue_component__$J;exports.TableBody=__vue_component__$g;exports.TableFoot=__vue_component__$h;exports.TableHead=__vue_component__$i;exports.Tabs=__vue_component__$K;exports.Thumbnail=__vue_component__$j;exports.Toast=__vue_component__$L;exports.Tooltip=__vue_component__$M;exports.TopBar=__vue_component__$N;exports.Video=__vue_component__$k;exports.default=plugin;exports.install=install;
+}exports.JsAccordionMenu=__vue_component__$l;exports.JsAlert=__vue_component__;exports.JsBadge=__vue_component__$1;exports.JsBreadcrumb=__vue_component__$2;exports.JsBreadcrumbs=__vue_component__$m;exports.JsButton=__vue_component__$3;exports.JsButtonGroup=__vue_component__$n;exports.JsCarousel=__vue_component__$o;exports.JsDislike=__vue_component__$4;exports.JsDrillDownMenu=__vue_component__$p;exports.JsDropDownMenu=__vue_component__$q;exports.JsEmoticon=__vue_component__$5;exports.JsFavorite=__vue_component__$6;exports.JsFeatured=__vue_component__$7;exports.JsFooter=__vue_component__$r;exports.JsForm=__vue_component__$s;exports.JsFormInput=__vue_component__$8;exports.JsFormInputGroup=__vue_component__$t;exports.JsGallery=__vue_component__$u;exports.JsHeader=__vue_component__$v;exports.JsIcon=__vue_component__$9;exports.JsJumbotron=__vue_component__$w;exports.JsLike=__vue_component__$a;exports.JsList=__vue_component__$x;exports.JsListItem=__vue_component__$b;exports.JsMenu=__vue_component__$y;exports.JsMenuEntry=__vue_component__$c;exports.JsModal=__vue_component__$z;exports.JsNavigation=__vue_component__$A;exports.JsNavigationBar=__vue_component__$B;exports.JsOffCanvas=__vue_component__$C;exports.JsPagination=__vue_component__$D;exports.JsPost=__vue_component__$d;exports.JsProgressBar=__vue_component__$E;exports.JsRating=__vue_component__$F;exports.JsRelativeEmbed=__vue_component__$G;exports.JsSlider=__vue_component__$H;exports.JsSpinner=__vue_component__$e;exports.JsSwitch=__vue_component__$I;exports.JsTab=__vue_component__$f;exports.JsTable=__vue_component__$J;exports.JsTableBody=__vue_component__$g;exports.JsTableFoot=__vue_component__$h;exports.JsTableHead=__vue_component__$i;exports.JsTabs=__vue_component__$K;exports.JsThumbnail=__vue_component__$j;exports.JsToast=__vue_component__$L;exports.JsTooltip=__vue_component__$M;exports.JsTopBar=__vue_component__$N;exports.JsVideo=__vue_component__$k;exports.default=plugin;exports.install=install;

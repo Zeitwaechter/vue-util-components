@@ -1,7 +1,7 @@
 <template>
-    <div class="js-component p-6 bg-gray-200 rounded-lg shadow-xl mx-6">
+    <div class="js-component p-6 bg-gray-200 rounded-lg shadow-md mx-6 my-6">
 
-        <p class="text-lg text-bold mb-2">
+        <p class="text-lg font-bold mb-2">
             <slot name="heading-text" />
         </p>
 

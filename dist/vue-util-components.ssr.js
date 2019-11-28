@@ -1353,9 +1353,17 @@ var __vue_staticRenderFns__$n = [];
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 var script$o = {
-  name : 'js-carousel',
+  name : 'js-component',
 
   components : {},
 
@@ -1370,7 +1378,7 @@ var script$o = {
 var __vue_script__$o = script$o;
 
 /* template */
-var __vue_render__$o = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-carousel"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$o = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-component p-6 bg-gray-200 rounded-lg shadow-xl mx-6"},[_vm._ssrNode("<p class=\"text-lg text-bold mb-2\">","</p>",[_vm._t("heading-text")],2),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"p-6 bg-white rounded-lg\">","</div>",[_vm._t("body-content")],2)],2)};
 var __vue_staticRenderFns__$o = [];
 
   /* style */
@@ -1378,7 +1386,7 @@ var __vue_staticRenderFns__$o = [];
   /* scoped */
   var __vue_scope_id__$o = undefined;
   /* module identifier */
-  var __vue_module_identifier__$o = "data-v-3f7d9da7";
+  var __vue_module_identifier__$o = "data-v-38536ce3";
   /* functional template */
   var __vue_is_functional_template__$o = false;
   /* style inject */
@@ -1408,7 +1416,7 @@ var __vue_staticRenderFns__$o = [];
 //
 
 var script$p = {
-  name : 'js-drill-down-menu',
+  name : 'js-carousel',
 
   components : {},
 
@@ -1423,7 +1431,7 @@ var script$p = {
 var __vue_script__$p = script$p;
 
 /* template */
-var __vue_render__$p = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-drill-down-menu"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$p = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-carousel"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$p = [];
 
   /* style */
@@ -1431,7 +1439,7 @@ var __vue_staticRenderFns__$p = [];
   /* scoped */
   var __vue_scope_id__$p = undefined;
   /* module identifier */
-  var __vue_module_identifier__$p = "data-v-1186a955";
+  var __vue_module_identifier__$p = "data-v-3f7d9da7";
   /* functional template */
   var __vue_is_functional_template__$p = false;
   /* style inject */
@@ -1461,7 +1469,7 @@ var __vue_staticRenderFns__$p = [];
 //
 
 var script$q = {
-  name : 'js-drop-down-menu',
+  name : 'js-drill-down-menu',
 
   components : {},
 
@@ -1476,7 +1484,7 @@ var script$q = {
 var __vue_script__$q = script$q;
 
 /* template */
-var __vue_render__$q = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-drop-down-menu"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$q = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-drill-down-menu"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$q = [];
 
   /* style */
@@ -1484,7 +1492,7 @@ var __vue_staticRenderFns__$q = [];
   /* scoped */
   var __vue_scope_id__$q = undefined;
   /* module identifier */
-  var __vue_module_identifier__$q = "data-v-5e5d9d53";
+  var __vue_module_identifier__$q = "data-v-1186a955";
   /* functional template */
   var __vue_is_functional_template__$q = false;
   /* style inject */
@@ -1514,7 +1522,7 @@ var __vue_staticRenderFns__$q = [];
 //
 
 var script$r = {
-  name : 'js-footer',
+  name : 'js-drop-down-menu',
 
   components : {},
 
@@ -1529,7 +1537,7 @@ var script$r = {
 var __vue_script__$r = script$r;
 
 /* template */
-var __vue_render__$r = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-footer"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$r = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-drop-down-menu"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$r = [];
 
   /* style */
@@ -1537,7 +1545,7 @@ var __vue_staticRenderFns__$r = [];
   /* scoped */
   var __vue_scope_id__$r = undefined;
   /* module identifier */
-  var __vue_module_identifier__$r = "data-v-3b2446fc";
+  var __vue_module_identifier__$r = "data-v-5e5d9d53";
   /* functional template */
   var __vue_is_functional_template__$r = false;
   /* style inject */
@@ -1567,7 +1575,7 @@ var __vue_staticRenderFns__$r = [];
 //
 
 var script$s = {
-  name : 'js-form',
+  name : 'js-footer',
 
   components : {},
 
@@ -1582,7 +1590,7 @@ var script$s = {
 var __vue_script__$s = script$s;
 
 /* template */
-var __vue_render__$s = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-form"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$s = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-footer"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$s = [];
 
   /* style */
@@ -1590,7 +1598,7 @@ var __vue_staticRenderFns__$s = [];
   /* scoped */
   var __vue_scope_id__$s = undefined;
   /* module identifier */
-  var __vue_module_identifier__$s = "data-v-7f45310b";
+  var __vue_module_identifier__$s = "data-v-3b2446fc";
   /* functional template */
   var __vue_is_functional_template__$s = false;
   /* style inject */
@@ -1620,7 +1628,7 @@ var __vue_staticRenderFns__$s = [];
 //
 
 var script$t = {
-  name : 'js-form-input-group',
+  name : 'js-form',
 
   components : {},
 
@@ -1635,7 +1643,7 @@ var script$t = {
 var __vue_script__$t = script$t;
 
 /* template */
-var __vue_render__$t = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-form-input-group"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$t = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-form"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$t = [];
 
   /* style */
@@ -1643,7 +1651,7 @@ var __vue_staticRenderFns__$t = [];
   /* scoped */
   var __vue_scope_id__$t = undefined;
   /* module identifier */
-  var __vue_module_identifier__$t = "data-v-ee98a2cc";
+  var __vue_module_identifier__$t = "data-v-7f45310b";
   /* functional template */
   var __vue_is_functional_template__$t = false;
   /* style inject */
@@ -1673,7 +1681,7 @@ var __vue_staticRenderFns__$t = [];
 //
 
 var script$u = {
-  name : 'js-gallery',
+  name : 'js-form-input-group',
 
   components : {},
 
@@ -1688,7 +1696,7 @@ var script$u = {
 var __vue_script__$u = script$u;
 
 /* template */
-var __vue_render__$u = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-gallery"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$u = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-form-input-group"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$u = [];
 
   /* style */
@@ -1696,7 +1704,7 @@ var __vue_staticRenderFns__$u = [];
   /* scoped */
   var __vue_scope_id__$u = undefined;
   /* module identifier */
-  var __vue_module_identifier__$u = "data-v-c434b48a";
+  var __vue_module_identifier__$u = "data-v-ee98a2cc";
   /* functional template */
   var __vue_is_functional_template__$u = false;
   /* style inject */
@@ -1726,7 +1734,7 @@ var __vue_staticRenderFns__$u = [];
 //
 
 var script$v = {
-  name : 'js-header',
+  name : 'js-gallery',
 
   components : {},
 
@@ -1741,7 +1749,7 @@ var script$v = {
 var __vue_script__$v = script$v;
 
 /* template */
-var __vue_render__$v = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-header"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$v = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-gallery"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$v = [];
 
   /* style */
@@ -1749,7 +1757,7 @@ var __vue_staticRenderFns__$v = [];
   /* scoped */
   var __vue_scope_id__$v = undefined;
   /* module identifier */
-  var __vue_module_identifier__$v = "data-v-2c7ebdb4";
+  var __vue_module_identifier__$v = "data-v-c434b48a";
   /* functional template */
   var __vue_is_functional_template__$v = false;
   /* style inject */
@@ -1779,7 +1787,7 @@ var __vue_staticRenderFns__$v = [];
 //
 
 var script$w = {
-  name : 'js-jumbotron',
+  name : 'js-header',
 
   components : {},
 
@@ -1794,7 +1802,7 @@ var script$w = {
 var __vue_script__$w = script$w;
 
 /* template */
-var __vue_render__$w = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-jumbotron"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$w = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-header"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$w = [];
 
   /* style */
@@ -1802,7 +1810,7 @@ var __vue_staticRenderFns__$w = [];
   /* scoped */
   var __vue_scope_id__$w = undefined;
   /* module identifier */
-  var __vue_module_identifier__$w = "data-v-c6e259e8";
+  var __vue_module_identifier__$w = "data-v-2c7ebdb4";
   /* functional template */
   var __vue_is_functional_template__$w = false;
   /* style inject */
@@ -1832,7 +1840,7 @@ var __vue_staticRenderFns__$w = [];
 //
 
 var script$x = {
-  name : 'js-list',
+  name : 'js-jumbotron',
 
   components : {},
 
@@ -1847,7 +1855,7 @@ var script$x = {
 var __vue_script__$x = script$x;
 
 /* template */
-var __vue_render__$x = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-list"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$x = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-jumbotron"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$x = [];
 
   /* style */
@@ -1855,7 +1863,7 @@ var __vue_staticRenderFns__$x = [];
   /* scoped */
   var __vue_scope_id__$x = undefined;
   /* module identifier */
-  var __vue_module_identifier__$x = "data-v-71f089a5";
+  var __vue_module_identifier__$x = "data-v-c6e259e8";
   /* functional template */
   var __vue_is_functional_template__$x = false;
   /* style inject */
@@ -1885,7 +1893,7 @@ var __vue_staticRenderFns__$x = [];
 //
 
 var script$y = {
-  name : 'js-menu',
+  name : 'js-list',
 
   components : {},
 
@@ -1900,7 +1908,7 @@ var script$y = {
 var __vue_script__$y = script$y;
 
 /* template */
-var __vue_render__$y = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-menu"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$y = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-list"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$y = [];
 
   /* style */
@@ -1908,7 +1916,7 @@ var __vue_staticRenderFns__$y = [];
   /* scoped */
   var __vue_scope_id__$y = undefined;
   /* module identifier */
-  var __vue_module_identifier__$y = "data-v-d4776374";
+  var __vue_module_identifier__$y = "data-v-71f089a5";
   /* functional template */
   var __vue_is_functional_template__$y = false;
   /* style inject */
@@ -1938,7 +1946,7 @@ var __vue_staticRenderFns__$y = [];
 //
 
 var script$z = {
-  name : 'js-modal',
+  name : 'js-menu',
 
   components : {},
 
@@ -1953,7 +1961,7 @@ var script$z = {
 var __vue_script__$z = script$z;
 
 /* template */
-var __vue_render__$z = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-modal"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$z = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-menu"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$z = [];
 
   /* style */
@@ -1961,7 +1969,7 @@ var __vue_staticRenderFns__$z = [];
   /* scoped */
   var __vue_scope_id__$z = undefined;
   /* module identifier */
-  var __vue_module_identifier__$z = "data-v-320eeb60";
+  var __vue_module_identifier__$z = "data-v-d4776374";
   /* functional template */
   var __vue_is_functional_template__$z = false;
   /* style inject */
@@ -1991,7 +1999,7 @@ var __vue_staticRenderFns__$z = [];
 //
 
 var script$A = {
-  name : 'js-navigation',
+  name : 'js-modal',
 
   components : {},
 
@@ -2006,7 +2014,7 @@ var script$A = {
 var __vue_script__$A = script$A;
 
 /* template */
-var __vue_render__$A = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-navigation"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$A = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-modal"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$A = [];
 
   /* style */
@@ -2014,7 +2022,7 @@ var __vue_staticRenderFns__$A = [];
   /* scoped */
   var __vue_scope_id__$A = undefined;
   /* module identifier */
-  var __vue_module_identifier__$A = "data-v-0191089b";
+  var __vue_module_identifier__$A = "data-v-320eeb60";
   /* functional template */
   var __vue_is_functional_template__$A = false;
   /* style inject */
@@ -2044,7 +2052,7 @@ var __vue_staticRenderFns__$A = [];
 //
 
 var script$B = {
-  name : 'js-navigation-bar',
+  name : 'js-navigation',
 
   components : {},
 
@@ -2059,7 +2067,7 @@ var script$B = {
 var __vue_script__$B = script$B;
 
 /* template */
-var __vue_render__$B = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-navigation-bar"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$B = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-navigation"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$B = [];
 
   /* style */
@@ -2067,7 +2075,7 @@ var __vue_staticRenderFns__$B = [];
   /* scoped */
   var __vue_scope_id__$B = undefined;
   /* module identifier */
-  var __vue_module_identifier__$B = "data-v-730d45a1";
+  var __vue_module_identifier__$B = "data-v-0191089b";
   /* functional template */
   var __vue_is_functional_template__$B = false;
   /* style inject */
@@ -2097,7 +2105,7 @@ var __vue_staticRenderFns__$B = [];
 //
 
 var script$C = {
-  name : 'js-off-canvas',
+  name : 'js-navigation-bar',
 
   components : {},
 
@@ -2112,7 +2120,7 @@ var script$C = {
 var __vue_script__$C = script$C;
 
 /* template */
-var __vue_render__$C = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-off-canvas"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$C = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-navigation-bar"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$C = [];
 
   /* style */
@@ -2120,7 +2128,7 @@ var __vue_staticRenderFns__$C = [];
   /* scoped */
   var __vue_scope_id__$C = undefined;
   /* module identifier */
-  var __vue_module_identifier__$C = "data-v-fb08d586";
+  var __vue_module_identifier__$C = "data-v-730d45a1";
   /* functional template */
   var __vue_is_functional_template__$C = false;
   /* style inject */
@@ -2150,7 +2158,7 @@ var __vue_staticRenderFns__$C = [];
 //
 
 var script$D = {
-  name : 'js-pagination',
+  name : 'js-off-canvas',
 
   components : {},
 
@@ -2165,7 +2173,7 @@ var script$D = {
 var __vue_script__$D = script$D;
 
 /* template */
-var __vue_render__$D = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-pagination"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$D = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-off-canvas"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$D = [];
 
   /* style */
@@ -2173,7 +2181,7 @@ var __vue_staticRenderFns__$D = [];
   /* scoped */
   var __vue_scope_id__$D = undefined;
   /* module identifier */
-  var __vue_module_identifier__$D = "data-v-bdf2c03e";
+  var __vue_module_identifier__$D = "data-v-fb08d586";
   /* functional template */
   var __vue_is_functional_template__$D = false;
   /* style inject */
@@ -2203,7 +2211,7 @@ var __vue_staticRenderFns__$D = [];
 //
 
 var script$E = {
-  name : 'js-progress-bar',
+  name : 'js-pagination',
 
   components : {},
 
@@ -2218,7 +2226,7 @@ var script$E = {
 var __vue_script__$E = script$E;
 
 /* template */
-var __vue_render__$E = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-progress-bar"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$E = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-pagination"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$E = [];
 
   /* style */
@@ -2226,7 +2234,7 @@ var __vue_staticRenderFns__$E = [];
   /* scoped */
   var __vue_scope_id__$E = undefined;
   /* module identifier */
-  var __vue_module_identifier__$E = "data-v-48634e4c";
+  var __vue_module_identifier__$E = "data-v-bdf2c03e";
   /* functional template */
   var __vue_is_functional_template__$E = false;
   /* style inject */
@@ -2254,9 +2262,15 @@ var __vue_staticRenderFns__$E = [];
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 var script$F = {
-  name : 'js-rating',
+  name : 'js-partial',
 
   components : {},
 
@@ -2271,7 +2285,7 @@ var script$F = {
 var __vue_script__$F = script$F;
 
 /* template */
-var __vue_render__$F = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-rating"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$F = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-partial p-6 bg-white rounded-lg shadow-xl mx-6"},[_vm._ssrNode("<p class=\"text-2xl font-bold mb-4\">","</p>",[_vm._t("heading-text")],2),_vm._ssrNode(" "),_vm._t("body-content")],2)};
 var __vue_staticRenderFns__$F = [];
 
   /* style */
@@ -2279,7 +2293,7 @@ var __vue_staticRenderFns__$F = [];
   /* scoped */
   var __vue_scope_id__$F = undefined;
   /* module identifier */
-  var __vue_module_identifier__$F = "data-v-776ec278";
+  var __vue_module_identifier__$F = "data-v-79b33f1c";
   /* functional template */
   var __vue_is_functional_template__$F = false;
   /* style inject */
@@ -2309,7 +2323,7 @@ var __vue_staticRenderFns__$F = [];
 //
 
 var script$G = {
-  name : 'js-relative-embed',
+  name : 'js-progress-bar',
 
   components : {},
 
@@ -2324,7 +2338,7 @@ var script$G = {
 var __vue_script__$G = script$G;
 
 /* template */
-var __vue_render__$G = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-relative-embed"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$G = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-progress-bar"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$G = [];
 
   /* style */
@@ -2332,7 +2346,7 @@ var __vue_staticRenderFns__$G = [];
   /* scoped */
   var __vue_scope_id__$G = undefined;
   /* module identifier */
-  var __vue_module_identifier__$G = "data-v-b7a5bdc2";
+  var __vue_module_identifier__$G = "data-v-48634e4c";
   /* functional template */
   var __vue_is_functional_template__$G = false;
   /* style inject */
@@ -2362,7 +2376,7 @@ var __vue_staticRenderFns__$G = [];
 //
 
 var script$H = {
-  name : 'js-slider',
+  name : 'js-rating',
 
   components : {},
 
@@ -2377,7 +2391,7 @@ var script$H = {
 var __vue_script__$H = script$H;
 
 /* template */
-var __vue_render__$H = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-slider"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$H = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-rating"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$H = [];
 
   /* style */
@@ -2385,7 +2399,7 @@ var __vue_staticRenderFns__$H = [];
   /* scoped */
   var __vue_scope_id__$H = undefined;
   /* module identifier */
-  var __vue_module_identifier__$H = "data-v-60ca9a88";
+  var __vue_module_identifier__$H = "data-v-776ec278";
   /* functional template */
   var __vue_is_functional_template__$H = false;
   /* style inject */
@@ -2415,7 +2429,7 @@ var __vue_staticRenderFns__$H = [];
 //
 
 var script$I = {
-  name : 'js-switch',
+  name : 'js-relative-embed',
 
   components : {},
 
@@ -2430,7 +2444,7 @@ var script$I = {
 var __vue_script__$I = script$I;
 
 /* template */
-var __vue_render__$I = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-switch"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$I = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-relative-embed"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$I = [];
 
   /* style */
@@ -2438,7 +2452,7 @@ var __vue_staticRenderFns__$I = [];
   /* scoped */
   var __vue_scope_id__$I = undefined;
   /* module identifier */
-  var __vue_module_identifier__$I = "data-v-3b0afc3b";
+  var __vue_module_identifier__$I = "data-v-b7a5bdc2";
   /* functional template */
   var __vue_is_functional_template__$I = false;
   /* style inject */
@@ -2468,7 +2482,7 @@ var __vue_staticRenderFns__$I = [];
 //
 
 var script$J = {
-  name : 'js-table',
+  name : 'js-slider',
 
   components : {},
 
@@ -2483,7 +2497,7 @@ var script$J = {
 var __vue_script__$J = script$J;
 
 /* template */
-var __vue_render__$J = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-table"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$J = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-slider"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$J = [];
 
   /* style */
@@ -2491,7 +2505,7 @@ var __vue_staticRenderFns__$J = [];
   /* scoped */
   var __vue_scope_id__$J = undefined;
   /* module identifier */
-  var __vue_module_identifier__$J = "data-v-1d18527f";
+  var __vue_module_identifier__$J = "data-v-60ca9a88";
   /* functional template */
   var __vue_is_functional_template__$J = false;
   /* style inject */
@@ -2521,7 +2535,7 @@ var __vue_staticRenderFns__$J = [];
 //
 
 var script$K = {
-  name : 'js-tabs',
+  name : 'js-switch',
 
   components : {},
 
@@ -2536,7 +2550,7 @@ var script$K = {
 var __vue_script__$K = script$K;
 
 /* template */
-var __vue_render__$K = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-tabs"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$K = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-switch"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$K = [];
 
   /* style */
@@ -2544,7 +2558,7 @@ var __vue_staticRenderFns__$K = [];
   /* scoped */
   var __vue_scope_id__$K = undefined;
   /* module identifier */
-  var __vue_module_identifier__$K = "data-v-d2a69ef6";
+  var __vue_module_identifier__$K = "data-v-3b0afc3b";
   /* functional template */
   var __vue_is_functional_template__$K = false;
   /* style inject */
@@ -2574,7 +2588,7 @@ var __vue_staticRenderFns__$K = [];
 //
 
 var script$L = {
-  name : 'js-toast',
+  name : 'js-table',
 
   components : {},
 
@@ -2589,7 +2603,7 @@ var script$L = {
 var __vue_script__$L = script$L;
 
 /* template */
-var __vue_render__$L = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-toast"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$L = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-table"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$L = [];
 
   /* style */
@@ -2597,7 +2611,7 @@ var __vue_staticRenderFns__$L = [];
   /* scoped */
   var __vue_scope_id__$L = undefined;
   /* module identifier */
-  var __vue_module_identifier__$L = "data-v-016aee66";
+  var __vue_module_identifier__$L = "data-v-1d18527f";
   /* functional template */
   var __vue_is_functional_template__$L = false;
   /* style inject */
@@ -2627,7 +2641,7 @@ var __vue_staticRenderFns__$L = [];
 //
 
 var script$M = {
-  name : 'js-tooltip',
+  name : 'js-tabs',
 
   components : {},
 
@@ -2642,7 +2656,7 @@ var script$M = {
 var __vue_script__$M = script$M;
 
 /* template */
-var __vue_render__$M = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-tooltip"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$M = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-tabs"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$M = [];
 
   /* style */
@@ -2650,7 +2664,7 @@ var __vue_staticRenderFns__$M = [];
   /* scoped */
   var __vue_scope_id__$M = undefined;
   /* module identifier */
-  var __vue_module_identifier__$M = "data-v-3dfeedec";
+  var __vue_module_identifier__$M = "data-v-d2a69ef6";
   /* functional template */
   var __vue_is_functional_template__$M = false;
   /* style inject */
@@ -2680,7 +2694,7 @@ var __vue_staticRenderFns__$M = [];
 //
 
 var script$N = {
-  name : 'js-top-bar',
+  name : 'js-toast',
 
   components : {},
 
@@ -2695,7 +2709,7 @@ var script$N = {
 var __vue_script__$N = script$N;
 
 /* template */
-var __vue_render__$N = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-top-bar"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$N = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-toast"},[_vm._ssrNode("<p>This is a test!</p>")])};
 var __vue_staticRenderFns__$N = [];
 
   /* style */
@@ -2703,7 +2717,7 @@ var __vue_staticRenderFns__$N = [];
   /* scoped */
   var __vue_scope_id__$N = undefined;
   /* module identifier */
-  var __vue_module_identifier__$N = "data-v-15ee0d1c";
+  var __vue_module_identifier__$N = "data-v-016aee66";
   /* functional template */
   var __vue_is_functional_template__$N = false;
   /* style inject */
@@ -2725,8 +2739,114 @@ var __vue_staticRenderFns__$N = [];
     undefined,
     undefined,
     undefined
+  );//
+//
+//
+//
+//
+//
+
+var script$O = {
+  name : 'js-tooltip',
+
+  components : {},
+
+  mounted: function mounted() {
+    //
+  },
+
+  created: function created() {
+    //
+  },
+};/* script */
+var __vue_script__$O = script$O;
+
+/* template */
+var __vue_render__$O = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-tooltip"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_staticRenderFns__$O = [];
+
+  /* style */
+  var __vue_inject_styles__$O = undefined;
+  /* scoped */
+  var __vue_scope_id__$O = undefined;
+  /* module identifier */
+  var __vue_module_identifier__$O = "data-v-3dfeedec";
+  /* functional template */
+  var __vue_is_functional_template__$O = false;
+  /* style inject */
+  
+  /* style inject SSR */
+  
+  /* style inject shadow dom */
+  
+
+  
+  var __vue_component__$O = normalizeComponent(
+    { render: __vue_render__$O, staticRenderFns: __vue_staticRenderFns__$O },
+    __vue_inject_styles__$O,
+    __vue_script__$O,
+    __vue_scope_id__$O,
+    __vue_is_functional_template__$O,
+    __vue_module_identifier__$O,
+    false,
+    undefined,
+    undefined,
+    undefined
+  );//
+//
+//
+//
+//
+//
+
+var script$P = {
+  name : 'js-top-bar',
+
+  components : {},
+
+  mounted: function mounted() {
+    //
+  },
+
+  created: function created() {
+    //
+  },
+};/* script */
+var __vue_script__$P = script$P;
+
+/* template */
+var __vue_render__$P = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-top-bar"},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_staticRenderFns__$P = [];
+
+  /* style */
+  var __vue_inject_styles__$P = undefined;
+  /* scoped */
+  var __vue_scope_id__$P = undefined;
+  /* module identifier */
+  var __vue_module_identifier__$P = "data-v-15ee0d1c";
+  /* functional template */
+  var __vue_is_functional_template__$P = false;
+  /* style inject */
+  
+  /* style inject SSR */
+  
+  /* style inject shadow dom */
+  
+
+  
+  var __vue_component__$P = normalizeComponent(
+    { render: __vue_render__$P, staticRenderFns: __vue_staticRenderFns__$P },
+    __vue_inject_styles__$P,
+    __vue_script__$P,
+    __vue_scope_id__$P,
+    __vue_is_functional_template__$P,
+    __vue_module_identifier__$P,
+    false,
+    undefined,
+    undefined,
+    undefined
   );// Elements
-var components=/*#__PURE__*/Object.freeze({__proto__:null,JsAlert: __vue_component__,JsBadge: __vue_component__$1,JsBreadcrumb: __vue_component__$2,JsButton: __vue_component__$3,JsDislike: __vue_component__$4,JsEmoticon: __vue_component__$5,JsFavorite: __vue_component__$6,JsFeatured: __vue_component__$7,JsFormInput: __vue_component__$8,JsIcon: __vue_component__$9,JsLike: __vue_component__$a,JsListItem: __vue_component__$b,JsMenuEntry: __vue_component__$c,JsPost: __vue_component__$d,JsSpinner: __vue_component__$e,JsTab: __vue_component__$f,JsTableBody: __vue_component__$g,JsTableFoot: __vue_component__$h,JsTableHead: __vue_component__$i,JsThumbnail: __vue_component__$j,JsVideo: __vue_component__$k,JsAccordionMenu: __vue_component__$l,JsBreadcrumbs: __vue_component__$m,JsButtonGroup: __vue_component__$n,JsCarousel: __vue_component__$o,JsDrillDownMenu: __vue_component__$p,JsDropDownMenu: __vue_component__$q,JsFooter: __vue_component__$r,JsForm: __vue_component__$s,JsFormInputGroup: __vue_component__$t,JsGallery: __vue_component__$u,JsHeader: __vue_component__$v,JsJumbotron: __vue_component__$w,JsList: __vue_component__$x,JsMenu: __vue_component__$y,JsModal: __vue_component__$z,JsNavigation: __vue_component__$A,JsNavigationBar: __vue_component__$B,JsOffCanvas: __vue_component__$C,JsPagination: __vue_component__$D,JsProgressBar: __vue_component__$E,JsRating: __vue_component__$F,JsRelativeEmbed: __vue_component__$G,JsSlider: __vue_component__$H,JsSwitch: __vue_component__$I,JsTable: __vue_component__$J,JsTabs: __vue_component__$K,JsToast: __vue_component__$L,JsTooltip: __vue_component__$M,JsTopBar: __vue_component__$N});//// Wrapper (internal)
+var components=/*#__PURE__*/Object.freeze({__proto__:null,JsAlert: __vue_component__,JsBadge: __vue_component__$1,JsBreadcrumb: __vue_component__$2,JsButton: __vue_component__$3,JsDislike: __vue_component__$4,JsEmoticon: __vue_component__$5,JsFavorite: __vue_component__$6,JsFeatured: __vue_component__$7,JsFormInput: __vue_component__$8,JsIcon: __vue_component__$9,JsLike: __vue_component__$a,JsListItem: __vue_component__$b,JsMenuEntry: __vue_component__$c,JsPost: __vue_component__$d,JsSpinner: __vue_component__$e,JsTab: __vue_component__$f,JsTableBody: __vue_component__$g,JsTableFoot: __vue_component__$h,JsTableHead: __vue_component__$i,JsThumbnail: __vue_component__$j,JsVideo: __vue_component__$k,JsAccordionMenu: __vue_component__$l,JsBreadcrumbs: __vue_component__$m,JsButtonGroup: __vue_component__$n,JsComponent: __vue_component__$o,JsCarousel: __vue_component__$p,JsDrillDownMenu: __vue_component__$q,JsDropDownMenu: __vue_component__$r,JsFooter: __vue_component__$s,JsForm: __vue_component__$t,JsFormInputGroup: __vue_component__$u,JsGallery: __vue_component__$v,JsHeader: __vue_component__$w,JsJumbotron: __vue_component__$x,JsList: __vue_component__$y,JsMenu: __vue_component__$z,JsModal: __vue_component__$A,JsNavigation: __vue_component__$B,JsNavigationBar: __vue_component__$C,JsOffCanvas: __vue_component__$D,JsPagination: __vue_component__$E,JsPartial: __vue_component__$F,JsProgressBar: __vue_component__$G,JsRating: __vue_component__$H,JsRelativeEmbed: __vue_component__$I,JsSlider: __vue_component__$J,JsSwitch: __vue_component__$K,JsTable: __vue_component__$L,JsTabs: __vue_component__$M,JsToast: __vue_component__$N,JsTooltip: __vue_component__$O,JsTopBar: __vue_component__$P});//// Wrapper (internal)
 
 // compose components into init
 function install(Vue) {
@@ -2764,4 +2884,4 @@ if (
     && DIPackage.hasOwnProperty("use")
 ) {
     DIPackage.use(plugin);
-}exports.JsAccordionMenu=__vue_component__$l;exports.JsAlert=__vue_component__;exports.JsBadge=__vue_component__$1;exports.JsBreadcrumb=__vue_component__$2;exports.JsBreadcrumbs=__vue_component__$m;exports.JsButton=__vue_component__$3;exports.JsButtonGroup=__vue_component__$n;exports.JsCarousel=__vue_component__$o;exports.JsDislike=__vue_component__$4;exports.JsDrillDownMenu=__vue_component__$p;exports.JsDropDownMenu=__vue_component__$q;exports.JsEmoticon=__vue_component__$5;exports.JsFavorite=__vue_component__$6;exports.JsFeatured=__vue_component__$7;exports.JsFooter=__vue_component__$r;exports.JsForm=__vue_component__$s;exports.JsFormInput=__vue_component__$8;exports.JsFormInputGroup=__vue_component__$t;exports.JsGallery=__vue_component__$u;exports.JsHeader=__vue_component__$v;exports.JsIcon=__vue_component__$9;exports.JsJumbotron=__vue_component__$w;exports.JsLike=__vue_component__$a;exports.JsList=__vue_component__$x;exports.JsListItem=__vue_component__$b;exports.JsMenu=__vue_component__$y;exports.JsMenuEntry=__vue_component__$c;exports.JsModal=__vue_component__$z;exports.JsNavigation=__vue_component__$A;exports.JsNavigationBar=__vue_component__$B;exports.JsOffCanvas=__vue_component__$C;exports.JsPagination=__vue_component__$D;exports.JsPost=__vue_component__$d;exports.JsProgressBar=__vue_component__$E;exports.JsRating=__vue_component__$F;exports.JsRelativeEmbed=__vue_component__$G;exports.JsSlider=__vue_component__$H;exports.JsSpinner=__vue_component__$e;exports.JsSwitch=__vue_component__$I;exports.JsTab=__vue_component__$f;exports.JsTable=__vue_component__$J;exports.JsTableBody=__vue_component__$g;exports.JsTableFoot=__vue_component__$h;exports.JsTableHead=__vue_component__$i;exports.JsTabs=__vue_component__$K;exports.JsThumbnail=__vue_component__$j;exports.JsToast=__vue_component__$L;exports.JsTooltip=__vue_component__$M;exports.JsTopBar=__vue_component__$N;exports.JsVideo=__vue_component__$k;exports.default=plugin;exports.install=install;
+}exports.JsAccordionMenu=__vue_component__$l;exports.JsAlert=__vue_component__;exports.JsBadge=__vue_component__$1;exports.JsBreadcrumb=__vue_component__$2;exports.JsBreadcrumbs=__vue_component__$m;exports.JsButton=__vue_component__$3;exports.JsButtonGroup=__vue_component__$n;exports.JsCarousel=__vue_component__$p;exports.JsComponent=__vue_component__$o;exports.JsDislike=__vue_component__$4;exports.JsDrillDownMenu=__vue_component__$q;exports.JsDropDownMenu=__vue_component__$r;exports.JsEmoticon=__vue_component__$5;exports.JsFavorite=__vue_component__$6;exports.JsFeatured=__vue_component__$7;exports.JsFooter=__vue_component__$s;exports.JsForm=__vue_component__$t;exports.JsFormInput=__vue_component__$8;exports.JsFormInputGroup=__vue_component__$u;exports.JsGallery=__vue_component__$v;exports.JsHeader=__vue_component__$w;exports.JsIcon=__vue_component__$9;exports.JsJumbotron=__vue_component__$x;exports.JsLike=__vue_component__$a;exports.JsList=__vue_component__$y;exports.JsListItem=__vue_component__$b;exports.JsMenu=__vue_component__$z;exports.JsMenuEntry=__vue_component__$c;exports.JsModal=__vue_component__$A;exports.JsNavigation=__vue_component__$B;exports.JsNavigationBar=__vue_component__$C;exports.JsOffCanvas=__vue_component__$D;exports.JsPagination=__vue_component__$E;exports.JsPartial=__vue_component__$F;exports.JsPost=__vue_component__$d;exports.JsProgressBar=__vue_component__$G;exports.JsRating=__vue_component__$H;exports.JsRelativeEmbed=__vue_component__$I;exports.JsSlider=__vue_component__$J;exports.JsSpinner=__vue_component__$e;exports.JsSwitch=__vue_component__$K;exports.JsTab=__vue_component__$f;exports.JsTable=__vue_component__$L;exports.JsTableBody=__vue_component__$g;exports.JsTableFoot=__vue_component__$h;exports.JsTableHead=__vue_component__$i;exports.JsTabs=__vue_component__$M;exports.JsThumbnail=__vue_component__$j;exports.JsToast=__vue_component__$N;exports.JsTooltip=__vue_component__$O;exports.JsTopBar=__vue_component__$P;exports.JsVideo=__vue_component__$k;exports.default=plugin;exports.install=install;

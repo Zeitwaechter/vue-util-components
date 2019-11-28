@@ -13,27 +13,57 @@
 
 </head>
 <body>
-<div class="page">
-    <div id="app">
-        <p class="text-xl">
-            Elements
-        </p>
+<div class="bg-white rounded-t-lg overflow-hidden border-t border-l border-r border-gray-400 p-4 bg-gray-200 px-8 py-12">
 
-        <p class="text-lg">
-            Alert
-        </p>
+    <p class="mb-6 text-3xl font-bold">
+        TailwindCSS+Vue Assets
+    </p>
 
-        <js-alert />
+    <div id="app" class="mx-auto flex">
 
-        <p class="text-xl">
-            Groups
-        </p>
+        <js-partial class="flex-1 h-screen">
 
-        <p class="text-lg">
-            Jumbotron
-        </p>
+            <template slot="heading-text">
+                Elements
+            </template>
 
-        <js-jumbotron />
+            <template slot="body-content">
+
+                <js-component>
+                    <template slot="heading-text">
+                        Alert
+                    </template>
+
+                    <template slot="body-content">
+                        <js-alert></js-alert>
+                    </template>
+                </js-component>
+
+            </template>
+
+        </js-partial>
+
+        <js-partial class="flex-1">
+
+            <template slot="heading-text">
+                Groups
+            </template>
+
+            <template slot="body-content">
+
+                <js-component>
+                    <template slot="heading-text">
+                        Jumbotron
+                    </template>
+
+                    <template slot="body-content">
+                        <js-jumbotron></js-jumbotron>
+                    </template>
+                </js-component>
+
+            </template>
+
+        </js-partial>
 
     </div>
 </div>

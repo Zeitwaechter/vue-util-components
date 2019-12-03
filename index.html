@@ -35,7 +35,87 @@
                     </template>
 
                     <template slot="body-content">
-                        <js-alert></js-alert>
+                        <js-alert :state="`success`">
+                            <slot name="heading-title">
+                                Success!
+                            </slot>
+
+                            <slot name="body-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                            </slot>
+                        </js-alert>
+                        <js-alert :state="`warning`">
+                            <slot name="heading-title">
+                                Warning!
+                            </slot>
+
+                            <slot name="body-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                            </slot>
+                        </js-alert>
+                        <js-alert :state="`danger`">
+                            <slot name="heading-title">
+                                Danger!
+                            </slot>
+
+                            <slot name="body-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                            </slot>
+                        </js-alert>
+                        <js-alert :state="`info`">
+                            <slot name="heading-title">
+                                Info!
+                            </slot>
+
+                            <slot name="body-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                            </slot>
+                        </js-alert>
+                        <js-alert :state="`primary`">
+                            <slot name="heading-title">
+                                Primary!
+                            </slot>
+
+                            <slot name="body-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                            </slot>
+                        </js-alert>
+                        <js-alert :state="`secondary`">
+                            <slot name="heading-title">
+                                Secondary!
+                            </slot>
+
+                            <slot name="body-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                            </slot>
+                        </js-alert>
+                        <js-alert :state="`tertiary`">
+                            <slot name="heading-title">
+                                Tertiary!
+                            </slot>
+
+                            <slot name="body-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                            </slot>
+                        </js-alert>
+                        <js-alert :state="`dark`">
+                            <slot name="heading-title">
+                                Dark!
+                            </slot>
+
+                            <slot name="body-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                            </slot>
+                        </js-alert>
+                        <js-alert :state="`light`">
+                            <slot name="heading-title">
+                                Light!
+                            </slot>
+
+                            <slot name="body-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                            </slot>
+                        </js-alert>
                     </template>
                 </js-component>
 

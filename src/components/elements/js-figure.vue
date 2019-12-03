@@ -5,17 +5,30 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-figure',
+    export default {
+        name : 'js-figure',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+            /**
+             * @return {boolean}
+             */
+            slotPassed() {
+                return !!this.$slots.default[0].text.length
+            }
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

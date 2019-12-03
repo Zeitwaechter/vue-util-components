@@ -5,17 +5,30 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-favorite',
+    export default {
+        name : 'js-favorite',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+            /**
+             * @return {boolean}
+             */
+            slotPassed() {
+                return !!this.$slots.default[0].text.length
+            }
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

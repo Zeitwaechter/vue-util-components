@@ -31,7 +31,7 @@ Please see their related Licensing.
 - [Rollup Plugin Vue](https://rollup-plugin-vue.vuejs.org/#what-does-rollup-plugin-vue-do)
 
 ## Licensing
-This package is currently build with `GPL-3.0-or-later` in mind.
+This package is currently build with `MIT` in mind.
 
 ## Contributing
 Please see `CODE_OF_CONDUCT.md` if you want to add something to this project of mine.

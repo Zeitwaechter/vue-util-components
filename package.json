@@ -30,7 +30,7 @@
         "type": "git",
         "url": "git+https://github.com/zeitwaechter/vue-util-components.git"
     },
-    "license": "GPL-3.0-or-later",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/zeitwaechter/vue-util-components/issues"
     },

@@ -5,17 +5,33 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-breadcrumb',
+    import { selectBackgroundColor } from "../helpers/bg-color";
+    import { selectFontColor }       from "../helpers/font-color";
 
-    components : {},
+    export default {
+        name : 'js-breadcrumb',
 
-    mounted() {
-      //
-    },
+        components : {},
 
-    created() {
-      //
-    },
-  }
+        computed : {
+            /**
+             * @return {boolean}
+             */
+            slotPassed() {
+                return !!this.$slots.default[0].text.length
+            }
+        },
+
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

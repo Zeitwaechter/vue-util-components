@@ -1,19 +1,35 @@
 <template>
     <div
-        class="js-alert"
-        :class="{ getBackgroundColorState, getFontColorState }"
+        class="js-alert border-l-4 p-2 rounded-lg"
+        :class="`${ getBackgroundColorState } ${ getFontColorState }`"
+        role="alert"
+        v-show="visible"
     >
-        <template>
-            <p class="font-bold">
-                <slot name="heading-text" />
-            </p>
-        </template>
+        <div class="flex content-start justify-between">
+            <div class="content">
+                <template v-if="$slots.hasOwnProperty(`heading-text`)">
+                    <p class="font-bold" role="heading">
+                        <slot name="heading-text" />
+                    </p>
+                </template>
 
-        <template v-if="slotPassed">
-            <div class="">
-                <slot name="body-content" />
+                <template v-if="$slots.hasOwnProperty(`body-content`)">
+                    <slot name="body-content" />
+                </template>
             </div>
-        </template>
+
+            <button
+                class="btn"
+                type="button"
+                role="button"
+                v-if="closeable"
+                @click="visible = !visible"
+            >
+                <slot name="close-icon">
+                    X
+                </slot>
+            </button>
+        </div>
     </div>
 </template>
 
@@ -25,17 +41,27 @@
         name : 'js-alert',
 
         props : {
-            state   : {
+            closeable : {
+                default : false,
+                type    : Boolean,
+            },
+            state     : {
                 default : `primary`,
                 type    : String,
             },
-            outside : {
+            outside   : {
                 default : false,
                 type    : Boolean,
             }
         },
 
         components : {},
+
+        data() {
+            return {
+                visible : true,
+            };
+        },
 
         computed : {
             /**
@@ -51,13 +77,6 @@
             getFontColorState() {
                 return selectFontColor(this.state, this.outside);
             },
-
-            /**
-             * @return {boolean}
-             */
-            slotPassed() {
-                return !!this.$slots.default[0].text.length
-            }
         },
 
         methods : {

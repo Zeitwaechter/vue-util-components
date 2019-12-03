@@ -14,12 +14,6 @@
         components : {},
 
         computed : {
-            /**
-             * @return {boolean}
-             */
-            slotPassed() {
-                return !!this.$slots.default[0].text.length
-            }
         },
 
         methods : {

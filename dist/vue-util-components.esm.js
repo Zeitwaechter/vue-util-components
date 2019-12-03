@@ -198,13 +198,6 @@ var script = {
         getFontColorState: function getFontColorState() {
             return selectFontColor(this.state, this.outside);
         },
-
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -302,7 +295,7 @@ var isOldIE = typeof navigator !== 'undefined' &&
 var __vue_script__ = script;
 
 /* template */
-var __vue_render__ = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-alert",class:{ getBackgroundColorState: _vm.getBackgroundColorState, getFontColorState: _vm.getFontColorState }},[[_c('p',{staticClass:"font-bold"},[_vm._t("heading-text")],2)],_vm._v(" "),(_vm.slotPassed)?[_c('div',{},[_vm._t("body-content")],2)]:_vm._e()],2)};
+var __vue_render__ = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-alert",class:{ getBackgroundColorState: _vm.getBackgroundColorState, getFontColorState: _vm.getFontColorState }},[(_vm.$slots.hasOwnProperty("heading-text"))?[_c('p',{staticClass:"font-bold"},[_vm._t("heading-text")],2)]:_vm._e(),_vm._v(" "),(_vm.$slots.hasOwnProperty("body-content"))?[_c('div',{},[_vm._t("body-content")],2)]:_vm._e()],2)};
 var __vue_staticRenderFns__ = [];
 
   /* style */
@@ -366,13 +359,6 @@ var script$1 = {
         getFontColorState: function getFontColorState() {
             return selectFontColor(this.state, this.outside);
         },
-
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -432,12 +418,6 @@ var script$2 = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -502,12 +482,6 @@ var script$3 = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -572,12 +546,6 @@ var script$4 = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -642,12 +610,6 @@ var script$5 = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -712,12 +674,6 @@ var script$6 = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -782,12 +738,6 @@ var script$7 = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -852,12 +802,6 @@ var script$8 = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -922,12 +866,6 @@ var script$9 = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -992,12 +930,6 @@ var script$a = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1062,12 +994,6 @@ var script$b = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1132,12 +1058,6 @@ var script$c = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1202,12 +1122,6 @@ var script$d = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1273,12 +1187,6 @@ var script$e = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1343,12 +1251,6 @@ var script$f = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1413,12 +1315,6 @@ var script$g = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1483,12 +1379,6 @@ var script$h = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1553,12 +1443,6 @@ var script$i = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1623,12 +1507,6 @@ var script$j = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1693,12 +1571,6 @@ var script$k = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1764,12 +1636,6 @@ var script$l = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1834,12 +1700,6 @@ var script$m = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1904,12 +1764,6 @@ var script$n = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1974,12 +1828,6 @@ var script$o = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2044,12 +1892,6 @@ var script$p = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2122,12 +1964,6 @@ var script$q = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2192,12 +2028,6 @@ var script$r = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2262,12 +2092,6 @@ var script$s = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2332,12 +2156,6 @@ var script$t = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2402,12 +2220,6 @@ var script$u = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2472,12 +2284,6 @@ var script$v = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2542,12 +2348,6 @@ var script$w = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2612,12 +2412,6 @@ var script$x = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2682,12 +2476,6 @@ var script$y = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2752,12 +2540,6 @@ var script$z = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2822,12 +2604,6 @@ var script$A = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2892,12 +2668,6 @@ var script$B = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2962,12 +2732,6 @@ var script$C = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3032,12 +2796,6 @@ var script$D = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3102,12 +2860,6 @@ var script$E = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3172,12 +2924,6 @@ var script$F = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3242,12 +2988,6 @@ var script$G = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3318,12 +3058,6 @@ var script$H = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3388,12 +3122,6 @@ var script$I = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3458,12 +3186,6 @@ var script$J = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3528,12 +3250,6 @@ var script$K = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3598,12 +3314,6 @@ var script$L = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3668,12 +3378,6 @@ var script$M = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3738,12 +3442,6 @@ var script$N = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3808,12 +3506,6 @@ var script$O = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3878,12 +3570,6 @@ var script$P = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3948,12 +3634,6 @@ var script$Q = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -4018,12 +3698,6 @@ var script$R = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {

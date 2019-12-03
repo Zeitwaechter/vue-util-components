@@ -41,13 +41,6 @@
             getFontColorState() {
                 return selectFontColor(this.state, this.outside);
             },
-
-            /**
-             * @return {boolean}
-             */
-            slotPassed() {
-                return !!this.$slots.default[0].text.length
-            }
         },
 
         methods : {

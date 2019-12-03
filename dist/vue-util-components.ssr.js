@@ -194,13 +194,6 @@ var script = {
         getFontColorState: function getFontColorState() {
             return selectFontColor(this.state, this.outside);
         },
-
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -294,7 +287,7 @@ var isOldIE = typeof navigator !== 'undefined' &&
 var __vue_script__ = script;
 
 /* template */
-var __vue_render__ = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-alert",class:{ getBackgroundColorState: _vm.getBackgroundColorState, getFontColorState: _vm.getFontColorState }},[[_vm._ssrNode("<p class=\"font-bold\">","</p>",[_vm._t("heading-text")],2)],_vm._ssrNode(" "),(_vm.slotPassed)?[_vm._ssrNode("<div>","</div>",[_vm._t("body-content")],2)]:_vm._e()],2)};
+var __vue_render__ = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-alert",class:{ getBackgroundColorState: _vm.getBackgroundColorState, getFontColorState: _vm.getFontColorState }},[(_vm.$slots.hasOwnProperty("heading-text"))?[_vm._ssrNode("<p class=\"font-bold\">","</p>",[_vm._t("heading-text")],2)]:_vm._e(),_vm._ssrNode(" "),(_vm.$slots.hasOwnProperty("body-content"))?[_vm._ssrNode("<div>","</div>",[_vm._t("body-content")],2)]:_vm._e()],2)};
 var __vue_staticRenderFns__ = [];
 
   /* style */
@@ -302,7 +295,7 @@ var __vue_staticRenderFns__ = [];
   /* scoped */
   var __vue_scope_id__ = undefined;
   /* module identifier */
-  var __vue_module_identifier__ = "data-v-3917af31";
+  var __vue_module_identifier__ = "data-v-11dd78fa";
   /* functional template */
   var __vue_is_functional_template__ = false;
   /* style inject */
@@ -356,13 +349,6 @@ var script$1 = {
         getFontColorState: function getFontColorState() {
             return selectFontColor(this.state, this.outside);
         },
-
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -388,7 +374,7 @@ var __vue_staticRenderFns__$1 = [];
   /* scoped */
   var __vue_scope_id__$1 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$1 = "data-v-b998c394";
+  var __vue_module_identifier__$1 = "data-v-fdf55490";
   /* functional template */
   var __vue_is_functional_template__$1 = false;
   /* style inject */
@@ -418,12 +404,6 @@ var script$2 = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -449,7 +429,7 @@ var __vue_staticRenderFns__$2 = [];
   /* scoped */
   var __vue_scope_id__$2 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$2 = "data-v-4694f0d6";
+  var __vue_module_identifier__$2 = "data-v-d2d344f4";
   /* functional template */
   var __vue_is_functional_template__$2 = false;
   /* style inject */
@@ -484,12 +464,6 @@ var script$3 = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -515,7 +489,7 @@ var __vue_staticRenderFns__$3 = [];
   /* scoped */
   var __vue_scope_id__$3 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$3 = "data-v-76b1256c";
+  var __vue_module_identifier__$3 = "data-v-230250fa";
   /* functional template */
   var __vue_is_functional_template__$3 = false;
   /* style inject */
@@ -550,12 +524,6 @@ var script$4 = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -581,7 +549,7 @@ var __vue_staticRenderFns__$4 = [];
   /* scoped */
   var __vue_scope_id__$4 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$4 = "data-v-120713b0";
+  var __vue_module_identifier__$4 = "data-v-14309f50";
   /* functional template */
   var __vue_is_functional_template__$4 = false;
   /* style inject */
@@ -616,12 +584,6 @@ var script$5 = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -647,7 +609,7 @@ var __vue_staticRenderFns__$5 = [];
   /* scoped */
   var __vue_scope_id__$5 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$5 = "data-v-4db983b9";
+  var __vue_module_identifier__$5 = "data-v-ac4bdaae";
   /* functional template */
   var __vue_is_functional_template__$5 = false;
   /* style inject */
@@ -682,12 +644,6 @@ var script$6 = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -713,7 +669,7 @@ var __vue_staticRenderFns__$6 = [];
   /* scoped */
   var __vue_scope_id__$6 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$6 = "data-v-bdfb0b44";
+  var __vue_module_identifier__$6 = "data-v-4d8c4d0e";
   /* functional template */
   var __vue_is_functional_template__$6 = false;
   /* style inject */
@@ -748,12 +704,6 @@ var script$7 = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -779,7 +729,7 @@ var __vue_staticRenderFns__$7 = [];
   /* scoped */
   var __vue_scope_id__$7 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$7 = "data-v-b2172298";
+  var __vue_module_identifier__$7 = "data-v-1025f1e4";
   /* functional template */
   var __vue_is_functional_template__$7 = false;
   /* style inject */
@@ -814,12 +764,6 @@ var script$8 = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -845,7 +789,7 @@ var __vue_staticRenderFns__$8 = [];
   /* scoped */
   var __vue_scope_id__$8 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$8 = "data-v-8a0489f4";
+  var __vue_module_identifier__$8 = "data-v-d9f36894";
   /* functional template */
   var __vue_is_functional_template__$8 = false;
   /* style inject */
@@ -880,12 +824,6 @@ var script$9 = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -911,7 +849,7 @@ var __vue_staticRenderFns__$9 = [];
   /* scoped */
   var __vue_scope_id__$9 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$9 = "data-v-0d510c3c";
+  var __vue_module_identifier__$9 = "data-v-090c1528";
   /* functional template */
   var __vue_is_functional_template__$9 = false;
   /* style inject */
@@ -946,12 +884,6 @@ var script$a = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -977,7 +909,7 @@ var __vue_staticRenderFns__$a = [];
   /* scoped */
   var __vue_scope_id__$a = undefined;
   /* module identifier */
-  var __vue_module_identifier__$a = "data-v-671208f9";
+  var __vue_module_identifier__$a = "data-v-420887e9";
   /* functional template */
   var __vue_is_functional_template__$a = false;
   /* style inject */
@@ -1012,12 +944,6 @@ var script$b = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1043,7 +969,7 @@ var __vue_staticRenderFns__$b = [];
   /* scoped */
   var __vue_scope_id__$b = undefined;
   /* module identifier */
-  var __vue_module_identifier__$b = "data-v-16eea1f1";
+  var __vue_module_identifier__$b = "data-v-1d9a9ae1";
   /* functional template */
   var __vue_is_functional_template__$b = false;
   /* style inject */
@@ -1078,12 +1004,6 @@ var script$c = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1109,7 +1029,7 @@ var __vue_staticRenderFns__$c = [];
   /* scoped */
   var __vue_scope_id__$c = undefined;
   /* module identifier */
-  var __vue_module_identifier__$c = "data-v-6d0e6b62";
+  var __vue_module_identifier__$c = "data-v-598e8c82";
   /* functional template */
   var __vue_is_functional_template__$c = false;
   /* style inject */
@@ -1144,12 +1064,6 @@ var script$d = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1176,7 +1090,7 @@ var __vue_staticRenderFns__$d = [];
   /* scoped */
   var __vue_scope_id__$d = undefined;
   /* module identifier */
-  var __vue_module_identifier__$d = "data-v-59da7f3c";
+  var __vue_module_identifier__$d = "data-v-c2c247e8";
   /* functional template */
   var __vue_is_functional_template__$d = false;
   /* style inject */
@@ -1211,12 +1125,6 @@ var script$e = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1242,7 +1150,7 @@ var __vue_staticRenderFns__$e = [];
   /* scoped */
   var __vue_scope_id__$e = undefined;
   /* module identifier */
-  var __vue_module_identifier__$e = "data-v-4759a95c";
+  var __vue_module_identifier__$e = "data-v-c0d52ae8";
   /* functional template */
   var __vue_is_functional_template__$e = false;
   /* style inject */
@@ -1277,12 +1185,6 @@ var script$f = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1308,7 +1210,7 @@ var __vue_staticRenderFns__$f = [];
   /* scoped */
   var __vue_scope_id__$f = undefined;
   /* module identifier */
-  var __vue_module_identifier__$f = "data-v-0eae4c90";
+  var __vue_module_identifier__$f = "data-v-0c753fe8";
   /* functional template */
   var __vue_is_functional_template__$f = false;
   /* style inject */
@@ -1343,12 +1245,6 @@ var script$g = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1374,7 +1270,7 @@ var __vue_staticRenderFns__$g = [];
   /* scoped */
   var __vue_scope_id__$g = undefined;
   /* module identifier */
-  var __vue_module_identifier__$g = "data-v-6de73ac5";
+  var __vue_module_identifier__$g = "data-v-3ba0f2b5";
   /* functional template */
   var __vue_is_functional_template__$g = false;
   /* style inject */
@@ -1409,12 +1305,6 @@ var script$h = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1440,7 +1330,7 @@ var __vue_staticRenderFns__$h = [];
   /* scoped */
   var __vue_scope_id__$h = undefined;
   /* module identifier */
-  var __vue_module_identifier__$h = "data-v-5a2d8f49";
+  var __vue_module_identifier__$h = "data-v-f1a56b8e";
   /* functional template */
   var __vue_is_functional_template__$h = false;
   /* style inject */
@@ -1475,12 +1365,6 @@ var script$i = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1506,7 +1390,7 @@ var __vue_staticRenderFns__$i = [];
   /* scoped */
   var __vue_scope_id__$i = undefined;
   /* module identifier */
-  var __vue_module_identifier__$i = "data-v-c692c88e";
+  var __vue_module_identifier__$i = "data-v-a32daaae";
   /* functional template */
   var __vue_is_functional_template__$i = false;
   /* style inject */
@@ -1541,12 +1425,6 @@ var script$j = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1572,7 +1450,7 @@ var __vue_staticRenderFns__$j = [];
   /* scoped */
   var __vue_scope_id__$j = undefined;
   /* module identifier */
-  var __vue_module_identifier__$j = "data-v-0aea2405";
+  var __vue_module_identifier__$j = "data-v-78e4cbf5";
   /* functional template */
   var __vue_is_functional_template__$j = false;
   /* style inject */
@@ -1607,12 +1485,6 @@ var script$k = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1638,7 +1510,7 @@ var __vue_staticRenderFns__$k = [];
   /* scoped */
   var __vue_scope_id__$k = undefined;
   /* module identifier */
-  var __vue_module_identifier__$k = "data-v-568a5db7";
+  var __vue_module_identifier__$k = "data-v-7dd51b27";
   /* functional template */
   var __vue_is_functional_template__$k = false;
   /* style inject */
@@ -1674,12 +1546,6 @@ var script$l = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1705,7 +1571,7 @@ var __vue_staticRenderFns__$l = [];
   /* scoped */
   var __vue_scope_id__$l = undefined;
   /* module identifier */
-  var __vue_module_identifier__$l = "data-v-7703a496";
+  var __vue_module_identifier__$l = "data-v-7f01e146";
   /* functional template */
   var __vue_is_functional_template__$l = false;
   /* style inject */
@@ -1740,12 +1606,6 @@ var script$m = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1771,7 +1631,7 @@ var __vue_staticRenderFns__$m = [];
   /* scoped */
   var __vue_scope_id__$m = undefined;
   /* module identifier */
-  var __vue_module_identifier__$m = "data-v-3d46e6e3";
+  var __vue_module_identifier__$m = "data-v-68a5355a";
   /* functional template */
   var __vue_is_functional_template__$m = false;
   /* style inject */
@@ -1806,12 +1666,6 @@ var script$n = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1837,7 +1691,7 @@ var __vue_staticRenderFns__$n = [];
   /* scoped */
   var __vue_scope_id__$n = undefined;
   /* module identifier */
-  var __vue_module_identifier__$n = "data-v-42e4d1c8";
+  var __vue_module_identifier__$n = "data-v-4e7caf68";
   /* functional template */
   var __vue_is_functional_template__$n = false;
   /* style inject */
@@ -1872,12 +1726,6 @@ var script$o = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1903,7 +1751,7 @@ var __vue_staticRenderFns__$o = [];
   /* scoped */
   var __vue_scope_id__$o = undefined;
   /* module identifier */
-  var __vue_module_identifier__$o = "data-v-e889cce4";
+  var __vue_module_identifier__$o = "data-v-73f3d03e";
   /* functional template */
   var __vue_is_functional_template__$o = false;
   /* style inject */
@@ -1938,12 +1786,6 @@ var script$p = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -1969,7 +1811,7 @@ var __vue_staticRenderFns__$p = [];
   /* scoped */
   var __vue_scope_id__$p = undefined;
   /* module identifier */
-  var __vue_module_identifier__$p = "data-v-2756cdbc";
+  var __vue_module_identifier__$p = "data-v-72665228";
   /* functional template */
   var __vue_is_functional_template__$p = false;
   /* style inject */
@@ -2012,12 +1854,6 @@ var script$q = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2043,7 +1879,7 @@ var __vue_staticRenderFns__$q = [];
   /* scoped */
   var __vue_scope_id__$q = undefined;
   /* module identifier */
-  var __vue_module_identifier__$q = "data-v-bb9c7c80";
+  var __vue_module_identifier__$q = "data-v-77116df0";
   /* functional template */
   var __vue_is_functional_template__$q = false;
   /* style inject */
@@ -2078,12 +1914,6 @@ var script$r = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2109,7 +1939,7 @@ var __vue_staticRenderFns__$r = [];
   /* scoped */
   var __vue_scope_id__$r = undefined;
   /* module identifier */
-  var __vue_module_identifier__$r = "data-v-5b0255f8";
+  var __vue_module_identifier__$r = "data-v-271427b0";
   /* functional template */
   var __vue_is_functional_template__$r = false;
   /* style inject */
@@ -2144,12 +1974,6 @@ var script$s = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2175,7 +1999,7 @@ var __vue_staticRenderFns__$s = [];
   /* scoped */
   var __vue_scope_id__$s = undefined;
   /* module identifier */
-  var __vue_module_identifier__$s = "data-v-541d0a26";
+  var __vue_module_identifier__$s = "data-v-140df2d6";
   /* functional template */
   var __vue_is_functional_template__$s = false;
   /* style inject */
@@ -2210,12 +2034,6 @@ var script$t = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2241,7 +2059,7 @@ var __vue_staticRenderFns__$t = [];
   /* scoped */
   var __vue_scope_id__$t = undefined;
   /* module identifier */
-  var __vue_module_identifier__$t = "data-v-20097fa4";
+  var __vue_module_identifier__$t = "data-v-6be536d4";
   /* functional template */
   var __vue_is_functional_template__$t = false;
   /* style inject */
@@ -2276,12 +2094,6 @@ var script$u = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2307,7 +2119,7 @@ var __vue_staticRenderFns__$u = [];
   /* scoped */
   var __vue_scope_id__$u = undefined;
   /* module identifier */
-  var __vue_module_identifier__$u = "data-v-3131d353";
+  var __vue_module_identifier__$u = "data-v-68b325c3";
   /* functional template */
   var __vue_is_functional_template__$u = false;
   /* style inject */
@@ -2342,12 +2154,6 @@ var script$v = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2373,7 +2179,7 @@ var __vue_staticRenderFns__$v = [];
   /* scoped */
   var __vue_scope_id__$v = undefined;
   /* module identifier */
-  var __vue_module_identifier__$v = "data-v-ce8a3148";
+  var __vue_module_identifier__$v = "data-v-4295288c";
   /* functional template */
   var __vue_is_functional_template__$v = false;
   /* style inject */
@@ -2408,12 +2214,6 @@ var script$w = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2439,7 +2239,7 @@ var __vue_staticRenderFns__$w = [];
   /* scoped */
   var __vue_scope_id__$w = undefined;
   /* module identifier */
-  var __vue_module_identifier__$w = "data-v-aefa0d2a";
+  var __vue_module_identifier__$w = "data-v-1c409ddb";
   /* functional template */
   var __vue_is_functional_template__$w = false;
   /* style inject */
@@ -2474,12 +2274,6 @@ var script$x = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2505,7 +2299,7 @@ var __vue_staticRenderFns__$x = [];
   /* scoped */
   var __vue_scope_id__$x = undefined;
   /* module identifier */
-  var __vue_module_identifier__$x = "data-v-6105b6e8";
+  var __vue_module_identifier__$x = "data-v-03ecc9bc";
   /* functional template */
   var __vue_is_functional_template__$x = false;
   /* style inject */
@@ -2540,12 +2334,6 @@ var script$y = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2571,7 +2359,7 @@ var __vue_staticRenderFns__$y = [];
   /* scoped */
   var __vue_scope_id__$y = undefined;
   /* module identifier */
-  var __vue_module_identifier__$y = "data-v-0a9a8385";
+  var __vue_module_identifier__$y = "data-v-5988cb75";
   /* functional template */
   var __vue_is_functional_template__$y = false;
   /* style inject */
@@ -2606,12 +2394,6 @@ var script$z = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2637,7 +2419,7 @@ var __vue_staticRenderFns__$z = [];
   /* scoped */
   var __vue_scope_id__$z = undefined;
   /* module identifier */
-  var __vue_module_identifier__$z = "data-v-63cde05b";
+  var __vue_module_identifier__$z = "data-v-24ae54ab";
   /* functional template */
   var __vue_is_functional_template__$z = false;
   /* style inject */
@@ -2672,12 +2454,6 @@ var script$A = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2703,7 +2479,7 @@ var __vue_staticRenderFns__$A = [];
   /* scoped */
   var __vue_scope_id__$A = undefined;
   /* module identifier */
-  var __vue_module_identifier__$A = "data-v-60d71af6";
+  var __vue_module_identifier__$A = "data-v-7e9d1fa6";
   /* functional template */
   var __vue_is_functional_template__$A = false;
   /* style inject */
@@ -2738,12 +2514,6 @@ var script$B = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2769,7 +2539,7 @@ var __vue_staticRenderFns__$B = [];
   /* scoped */
   var __vue_scope_id__$B = undefined;
   /* module identifier */
-  var __vue_module_identifier__$B = "data-v-1ca9f317";
+  var __vue_module_identifier__$B = "data-v-79a88ef2";
   /* functional template */
   var __vue_is_functional_template__$B = false;
   /* style inject */
@@ -2804,12 +2574,6 @@ var script$C = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2835,7 +2599,7 @@ var __vue_staticRenderFns__$C = [];
   /* scoped */
   var __vue_scope_id__$C = undefined;
   /* module identifier */
-  var __vue_module_identifier__$C = "data-v-7d6a599e";
+  var __vue_module_identifier__$C = "data-v-226dbc21";
   /* functional template */
   var __vue_is_functional_template__$C = false;
   /* style inject */
@@ -2870,12 +2634,6 @@ var script$D = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2901,7 +2659,7 @@ var __vue_staticRenderFns__$D = [];
   /* scoped */
   var __vue_scope_id__$D = undefined;
   /* module identifier */
-  var __vue_module_identifier__$D = "data-v-115df228";
+  var __vue_module_identifier__$D = "data-v-8e8d17c8";
   /* functional template */
   var __vue_is_functional_template__$D = false;
   /* style inject */
@@ -2936,12 +2694,6 @@ var script$E = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -2967,7 +2719,7 @@ var __vue_staticRenderFns__$E = [];
   /* scoped */
   var __vue_scope_id__$E = undefined;
   /* module identifier */
-  var __vue_module_identifier__$E = "data-v-723b18f2";
+  var __vue_module_identifier__$E = "data-v-209cfaa2";
   /* functional template */
   var __vue_is_functional_template__$E = false;
   /* style inject */
@@ -3002,12 +2754,6 @@ var script$F = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3033,7 +2779,7 @@ var __vue_staticRenderFns__$F = [];
   /* scoped */
   var __vue_scope_id__$F = undefined;
   /* module identifier */
-  var __vue_module_identifier__$F = "data-v-3cf3e692";
+  var __vue_module_identifier__$F = "data-v-5b610042";
   /* functional template */
   var __vue_is_functional_template__$F = false;
   /* style inject */
@@ -3068,12 +2814,6 @@ var script$G = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3099,7 +2839,7 @@ var __vue_staticRenderFns__$G = [];
   /* scoped */
   var __vue_scope_id__$G = undefined;
   /* module identifier */
-  var __vue_module_identifier__$G = "data-v-71f9999c";
+  var __vue_module_identifier__$G = "data-v-55b2c4e2";
   /* functional template */
   var __vue_is_functional_template__$G = false;
   /* style inject */
@@ -3140,12 +2880,6 @@ var script$H = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3171,7 +2905,7 @@ var __vue_staticRenderFns__$H = [];
   /* scoped */
   var __vue_scope_id__$H = undefined;
   /* module identifier */
-  var __vue_module_identifier__$H = "data-v-dc33f226";
+  var __vue_module_identifier__$H = "data-v-6f531cdd";
   /* functional template */
   var __vue_is_functional_template__$H = false;
   /* style inject */
@@ -3206,12 +2940,6 @@ var script$I = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3237,7 +2965,7 @@ var __vue_staticRenderFns__$I = [];
   /* scoped */
   var __vue_scope_id__$I = undefined;
   /* module identifier */
-  var __vue_module_identifier__$I = "data-v-682c83ab";
+  var __vue_module_identifier__$I = "data-v-d2684fca";
   /* functional template */
   var __vue_is_functional_template__$I = false;
   /* style inject */
@@ -3272,12 +3000,6 @@ var script$J = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3303,7 +3025,7 @@ var __vue_staticRenderFns__$J = [];
   /* scoped */
   var __vue_scope_id__$J = undefined;
   /* module identifier */
-  var __vue_module_identifier__$J = "data-v-396d1c95";
+  var __vue_module_identifier__$J = "data-v-79fe9ef6";
   /* functional template */
   var __vue_is_functional_template__$J = false;
   /* style inject */
@@ -3338,12 +3060,6 @@ var script$K = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3369,7 +3085,7 @@ var __vue_staticRenderFns__$K = [];
   /* scoped */
   var __vue_scope_id__$K = undefined;
   /* module identifier */
-  var __vue_module_identifier__$K = "data-v-2779e520";
+  var __vue_module_identifier__$K = "data-v-faf204c0";
   /* functional template */
   var __vue_is_functional_template__$K = false;
   /* style inject */
@@ -3404,12 +3120,6 @@ var script$L = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3435,7 +3145,7 @@ var __vue_staticRenderFns__$L = [];
   /* scoped */
   var __vue_scope_id__$L = undefined;
   /* module identifier */
-  var __vue_module_identifier__$L = "data-v-1bd4f34e";
+  var __vue_module_identifier__$L = "data-v-27710d49";
   /* functional template */
   var __vue_is_functional_template__$L = false;
   /* style inject */
@@ -3470,12 +3180,6 @@ var script$M = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3501,7 +3205,7 @@ var __vue_staticRenderFns__$M = [];
   /* scoped */
   var __vue_scope_id__$M = undefined;
   /* module identifier */
-  var __vue_module_identifier__$M = "data-v-324c6ae8";
+  var __vue_module_identifier__$M = "data-v-f4942088";
   /* functional template */
   var __vue_is_functional_template__$M = false;
   /* style inject */
@@ -3536,12 +3240,6 @@ var script$N = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3567,7 +3265,7 @@ var __vue_staticRenderFns__$N = [];
   /* scoped */
   var __vue_scope_id__$N = undefined;
   /* module identifier */
-  var __vue_module_identifier__$N = "data-v-54065560";
+  var __vue_module_identifier__$N = "data-v-3a41ad80";
   /* functional template */
   var __vue_is_functional_template__$N = false;
   /* style inject */
@@ -3602,12 +3300,6 @@ var script$O = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3633,7 +3325,7 @@ var __vue_staticRenderFns__$O = [];
   /* scoped */
   var __vue_scope_id__$O = undefined;
   /* module identifier */
-  var __vue_module_identifier__$O = "data-v-50415c54";
+  var __vue_module_identifier__$O = "data-v-995d02f4";
   /* functional template */
   var __vue_is_functional_template__$O = false;
   /* style inject */
@@ -3668,12 +3360,6 @@ var script$P = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3699,7 +3385,7 @@ var __vue_staticRenderFns__$P = [];
   /* scoped */
   var __vue_scope_id__$P = undefined;
   /* module identifier */
-  var __vue_module_identifier__$P = "data-v-6817f437";
+  var __vue_module_identifier__$P = "data-v-c350dcb2";
   /* functional template */
   var __vue_is_functional_template__$P = false;
   /* style inject */
@@ -3734,12 +3420,6 @@ var script$Q = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3765,7 +3445,7 @@ var __vue_staticRenderFns__$Q = [];
   /* scoped */
   var __vue_scope_id__$Q = undefined;
   /* module identifier */
-  var __vue_module_identifier__$Q = "data-v-87de7a4a";
+  var __vue_module_identifier__$Q = "data-v-2816fb4b";
   /* functional template */
   var __vue_is_functional_template__$Q = false;
   /* style inject */
@@ -3800,12 +3480,6 @@ var script$R = {
     components : {},
 
     computed : {
-        /**
-         * @return {boolean}
-         */
-        slotPassed: function slotPassed() {
-            return !!this.$slots.default[0].text.length
-        }
     },
 
     methods : {
@@ -3831,7 +3505,7 @@ var __vue_staticRenderFns__$R = [];
   /* scoped */
   var __vue_scope_id__$R = undefined;
   /* module identifier */
-  var __vue_module_identifier__$R = "data-v-1440897a";
+  var __vue_module_identifier__$R = "data-v-2bc481b3";
   /* functional template */
   var __vue_is_functional_template__$R = false;
   /* style inject */

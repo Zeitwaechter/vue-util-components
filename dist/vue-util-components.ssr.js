@@ -12,7 +12,7 @@ function selectBackgroundColor(statusString, outside) {
             if (outside) {
                 statusString = "border border-green-300";
             } else {
-                statusString = "bg-green-300";
+                statusString = "border-green-400 bg-green-300";
             }
             break;
 
@@ -20,7 +20,7 @@ function selectBackgroundColor(statusString, outside) {
             if (outside) {
                 statusString = "border border-yellow-400";
             } else {
-                statusString = "bg-yellow-400";
+                statusString = "border-yellow-500 bg-yellow-400";
             }
             break;
 
@@ -28,19 +28,23 @@ function selectBackgroundColor(statusString, outside) {
             if (outside) {
                 statusString = "border border-red-300";
             } else {
-                statusString = "bg-red-300";
+                statusString = "border-red-400 bg-red-300";
             }
             break;
 
         case "info":
-            statusString = "bg-blue-200";
+            if (outside) {
+                statusString = "border border-blue-200";
+            } else {
+                statusString = "border-blue-300 bg-blue-200";
+            }
             break;
 
         case "primary":
             if (outside) {
                 statusString = "border border-blue-400";
             } else {
-                statusString = "bg-blue-400";
+                statusString = "border-blue-500 bg-blue-400";
             }
             break;
 
@@ -48,7 +52,7 @@ function selectBackgroundColor(statusString, outside) {
             if (outside) {
                 statusString = "border border-gray-300";
             } else {
-                statusString = "bg-gray-300";
+                statusString = "border-gray-400 bg-gray-300";
             }
             break;
 
@@ -56,7 +60,7 @@ function selectBackgroundColor(statusString, outside) {
             if (outside) {
                 statusString = "border border-gray-200";
             } else {
-                statusString = "bg-gray-200";
+                statusString = "border-gray-300 bg-gray-200";
             }
             break;
 
@@ -64,7 +68,7 @@ function selectBackgroundColor(statusString, outside) {
             if (outside) {
                 statusString = "border border-black";
             } else {
-                statusString = "bg-black";
+                statusString = "border-gray-300 bg-black";
             }
             break;
 
@@ -72,7 +76,7 @@ function selectBackgroundColor(statusString, outside) {
             if (outside) {
                 statusString = "border border-white";
             } else {
-                statusString = "bg-white";
+                statusString = "border-gray-300 bg-white";
             }
             break;
     }
@@ -89,74 +93,32 @@ function selectFontColor(statusString, outside) {
 
     switch (statusString) {
         case "success":
-            if (outside) {
-                statusString = "text-gray-800";
-            } else {
-                statusString = "text-green-300";
-            }
-            break;
-
         case "warning":
-            if (outside) {
-                statusString = "text-gray-800";
-            } else {
-                statusString = "text-yellow-400";
-            }
-            break;
-
         case "danger":
-            if (outside) {
-                statusString = "text-gray-800";
-            } else {
-                statusString = "text-red-300";
-            }
-            break;
-
         case "info":
-            if (outside) {
-                statusString = "text-gray-800";
-            } else {
-                statusString = "text-blue-200";
-            }
-            break;
-
         case "primary":
-            if (outside) {
-                statusString = "text-gray-800";
-            } else {
-                statusString = "text-blue-400";
-            }
-            break;
-
         case "secondary":
-            if (outside) {
-                statusString = "text-gray-800";
-            } else {
-                statusString = "text-gray-300";
-            }
-            break;
-
         case "tertiary":
             if (outside) {
-                statusString = "text-gray-800";
+                statusString = "text-gray-700";
             } else {
-                statusString = "text-gray-200";
+                statusString = "text-gray-900";
             }
             break;
 
         case "dark":
             if (outside) {
-                statusString = "text-gray-800";
-            } else {
                 statusString = "text-black";
+            } else {
+                statusString = "text-white";
             }
             break;
 
         case "light":
             if (outside) {
-                statusString = "text-gray-800";
-            } else {
                 statusString = "text-white";
+            } else {
+                statusString = "text-black";
             }
             break;
     }
@@ -168,17 +130,27 @@ var script = {
     name : 'js-alert',
 
     props : {
-        state   : {
+        closeable : {
+            default : false,
+            type    : Boolean,
+        },
+        state     : {
             default : "primary",
             type    : String,
         },
-        outside : {
+        outside   : {
             default : false,
             type    : Boolean,
         }
     },
 
     components : {},
+
+    data: function data() {
+        return {
+            visible : true,
+        };
+    },
 
     computed : {
         /**
@@ -287,7 +259,7 @@ var isOldIE = typeof navigator !== 'undefined' &&
 var __vue_script__ = script;
 
 /* template */
-var __vue_render__ = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-alert",class:{ getBackgroundColorState: _vm.getBackgroundColorState, getFontColorState: _vm.getFontColorState }},[(_vm.$slots.hasOwnProperty("heading-text"))?[_vm._ssrNode("<p class=\"font-bold\">","</p>",[_vm._t("heading-text")],2)]:_vm._e(),_vm._ssrNode(" "),(_vm.$slots.hasOwnProperty("body-content"))?[_vm._ssrNode("<div>","</div>",[_vm._t("body-content")],2)]:_vm._e()],2)};
+var __vue_render__ = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.visible),expression:"visible"}],staticClass:"js-alert border-l-4 p-2 rounded-lg",class:(_vm.getBackgroundColorState + " " + _vm.getFontColorState),attrs:{"role":"alert"}},[_vm._ssrNode("<div class=\"flex content-start justify-between\">","</div>",[_vm._ssrNode("<div class=\"content\">","</div>",[(_vm.$slots.hasOwnProperty("heading-text"))?[_vm._ssrNode("<p role=\"heading\" class=\"font-bold\">","</p>",[_vm._t("heading-text")],2)]:_vm._e(),_vm._ssrNode(" "),(_vm.$slots.hasOwnProperty("body-content"))?[_vm._t("body-content")]:_vm._e()],2),_vm._ssrNode(" "),(_vm.closeable)?_vm._ssrNode("<button type=\"button\" role=\"button\" class=\"btn\">","</button>",[_vm._t("close-icon",[_vm._v("\n                X\n            ")])],2):_vm._e()],2)])};
 var __vue_staticRenderFns__ = [];
 
   /* style */
@@ -295,7 +267,7 @@ var __vue_staticRenderFns__ = [];
   /* scoped */
   var __vue_scope_id__ = undefined;
   /* module identifier */
-  var __vue_module_identifier__ = "data-v-11dd78fa";
+  var __vue_module_identifier__ = "data-v-288da662";
   /* functional template */
   var __vue_is_functional_template__ = false;
   /* style inject */
@@ -366,7 +338,7 @@ var script$1 = {
 var __vue_script__$1 = script$1;
 
 /* template */
-var __vue_render__$1 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-badge",class:{ getBackgroundColorState: _vm.getBackgroundColorState, getFontColorState: _vm.getFontColorState }},[_vm._ssrNode("<p>This is a test!</p>")])};
+var __vue_render__$1 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-alert p-2 rounded-lg text-center",class:(_vm.getBackgroundColorState + " " + _vm.getFontColorState),attrs:{"role":"tabpanel"}},[(_vm.$slots.hasOwnProperty("body-content"))?[_vm._t("body-content")]:_vm._e()],2)};
 var __vue_staticRenderFns__$1 = [];
 
   /* style */
@@ -374,7 +346,7 @@ var __vue_staticRenderFns__$1 = [];
   /* scoped */
   var __vue_scope_id__$1 = undefined;
   /* module identifier */
-  var __vue_module_identifier__$1 = "data-v-fdf55490";
+  var __vue_module_identifier__$1 = "data-v-33831ccb";
   /* functional template */
   var __vue_is_functional_template__$1 = false;
   /* style inject */

@@ -10,7 +10,7 @@ export function selectBackgroundColor(statusString, outside = false) {
             if (outside) {
                 statusString = `border border-green-300`;
             } else {
-                statusString = `bg-green-300`;
+                statusString = `border-green-400 bg-green-300`;
             }
             break;
 
@@ -18,7 +18,7 @@ export function selectBackgroundColor(statusString, outside = false) {
             if (outside) {
                 statusString = `border border-yellow-400`;
             } else {
-                statusString = `bg-yellow-400`;
+                statusString = `border-yellow-500 bg-yellow-400`;
             }
             break;
 
@@ -26,19 +26,23 @@ export function selectBackgroundColor(statusString, outside = false) {
             if (outside) {
                 statusString = `border border-red-300`;
             } else {
-                statusString = `bg-red-300`;
+                statusString = `border-red-400 bg-red-300`;
             }
             break;
 
         case `info`:
-            statusString = `bg-blue-200`;
+            if (outside) {
+                statusString = `border border-blue-200`;
+            } else {
+                statusString = `border-blue-300 bg-blue-200`;
+            }
             break;
 
         case `primary`:
             if (outside) {
                 statusString = `border border-blue-400`;
             } else {
-                statusString = `bg-blue-400`;
+                statusString = `border-blue-500 bg-blue-400`;
             }
             break;
 
@@ -46,7 +50,7 @@ export function selectBackgroundColor(statusString, outside = false) {
             if (outside) {
                 statusString = `border border-gray-300`;
             } else {
-                statusString = `bg-gray-300`;
+                statusString = `border-gray-400 bg-gray-300`;
             }
             break;
 
@@ -54,7 +58,7 @@ export function selectBackgroundColor(statusString, outside = false) {
             if (outside) {
                 statusString = `border border-gray-200`;
             } else {
-                statusString = `bg-gray-200`;
+                statusString = `border-gray-300 bg-gray-200`;
             }
             break;
 
@@ -62,7 +66,7 @@ export function selectBackgroundColor(statusString, outside = false) {
             if (outside) {
                 statusString = `border border-black`;
             } else {
-                statusString = `bg-black`;
+                statusString = `border-gray-300 bg-black`;
             }
             break;
 
@@ -70,7 +74,7 @@ export function selectBackgroundColor(statusString, outside = false) {
             if (outside) {
                 statusString = `border border-white`;
             } else {
-                statusString = `bg-white`;
+                statusString = `border-gray-300 bg-white`;
             }
             break;
     }

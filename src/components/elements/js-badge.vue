@@ -1,9 +1,12 @@
 <template>
     <div
-        class="js-badge"
-        :class="{ getBackgroundColorState, getFontColorState }"
+        class="js-alert p-2 rounded-lg text-center"
+        :class="`${ getBackgroundColorState } ${ getFontColorState }`"
+        role="tabpanel"
     >
-        <p>This is a test!</p>
+        <template v-if="$slots.hasOwnProperty(`body-content`)">
+            <slot name="body-content" />
+        </template>
     </div>
 </template>
 

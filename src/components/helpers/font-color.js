@@ -7,58 +7,16 @@ export function selectFontColor(statusString, outside = false) {
 
     switch (statusString) {
         case `success`:
-            if (outside) {
-                statusString = `text-green-300`;
-            } else {
-                statusString = `text-gray-800`;
-            }
-            break;
-
         case `warning`:
-            if (outside) {
-                statusString = `text-yellow-400`;
-            } else {
-                statusString = `text-gray-800`;
-            }
-            break;
-
         case `danger`:
-            if (outside) {
-                statusString = `text-red-300`;
-            } else {
-                statusString = `text-gray-800`;
-            }
-            break;
-
         case `info`:
-            if (outside) {
-                statusString = `text-blue-200`;
-            } else {
-                statusString = `text-gray-800`;
-            }
-            break;
-
         case `primary`:
-            if (outside) {
-                statusString = `text-blue-400`;
-            } else {
-                statusString = `text-gray-800`;
-            }
-            break;
-
         case `secondary`:
-            if (outside) {
-                statusString = `text-gray-300`;
-            } else {
-                statusString = `text-gray-800`;
-            }
-            break;
-
         case `tertiary`:
             if (outside) {
-                statusString = `text-gray-200`;
+                statusString = `text-gray-700`;
             } else {
-                statusString = `text-gray-800`;
+                statusString = `text-gray-900`;
             }
             break;
 

@@ -35,6 +35,16 @@
                     </template>
 
                     <template slot="body-content">
+
+                        <p class="text-2xl">
+                            Regular
+                        </p>
+
+                        <p class="mb-2">
+                            <span class="text-red-800">Notice</span>
+                            : the <code>light</code> color variants are encapsulated within black containers, for visibility reasons.
+                        </p>
+
                         <js-alert
                             :state="`success`"
                             class="my-4"
@@ -131,18 +141,151 @@
                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
                             </template>
                         </js-alert>
+
+                        <div class="bg-black px-1 py-2">
+                            <js-alert
+                                :state="`light`"
+                                class="my-4"
+                            >
+                                <template slot="heading-text">
+                                    Light!
+                                </template>
+
+                                <template slot="body-content">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                                </template>
+                            </js-alert>
+                        </div>
+
+                        <p class="text-2xl mt-6">
+                            Outside
+                        </p>
+
+                        <p class="mb-2">
+                            <span class="text-red-800">Notice</span>
+                            : the <code>light</code> color variants are encapsulated within black containers, for visibility reasons.
+                        </p>
+
                         <js-alert
-                            :state="`light`"
+                            :outside="true"
+                            :state="`success`"
                             class="my-4"
                         >
                             <template slot="heading-text">
-                                Light!
+                                Success!
                             </template>
 
                             <template slot="body-content">
                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
                             </template>
                         </js-alert>
+                        <js-alert
+                            :outside="true"
+                            :state="`warning`"
+                            class="my-4"
+                        >
+                            <template slot="heading-text">
+                                Warning!
+                            </template>
+
+                            <template slot="body-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                            </template>
+                        </js-alert>
+                        <js-alert
+                            :outside="true"
+                            :state="`danger`"
+                            class="my-4"
+                        >
+                            <template slot="heading-text">
+                                Danger!
+                            </template>
+
+                            <template slot="body-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                            </template>
+                        </js-alert>
+                        <js-alert
+                            :outside="true"
+                            :state="`info`"
+                            class="my-4"
+                        >
+                            <template slot="heading-text">
+                                Info!
+                            </template>
+
+                            <template slot="body-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                            </template>
+                        </js-alert>
+                        <js-alert
+                            :outside="true"
+                            :state="`primary`"
+                            class="my-4"
+                        >
+                            <template slot="heading-text">
+                                Primary!
+                            </template>
+
+                            <template slot="body-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                            </template>
+                        </js-alert>
+                        <js-alert
+                            :outside="true"
+                            :state="`secondary`"
+                            class="my-4"
+                        >
+                            <template slot="heading-text">
+                                Secondary!
+                            </template>
+
+                            <template slot="body-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                            </template>
+                        </js-alert>
+                        <js-alert
+                            :outside="true"
+                            :state="`tertiary`"
+                            class="my-4"
+                        >
+                            <template slot="heading-text">
+                                Tertiary!
+                            </template>
+
+                            <template slot="body-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                            </template>
+                        </js-alert>
+                        <js-alert
+                            :outside="true"
+                            :state="`dark`"
+                            class="my-4"
+                        >
+                            <template slot="heading-text">
+                                Dark!
+                            </template>
+
+                            <template slot="body-content">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                            </template>
+                        </js-alert>
+
+                        <div class="bg-black px-1 py-2">
+                            <js-alert
+                                :outside="true"
+                                :state="`light`"
+                                class="my-4"
+                            >
+                                <template slot="heading-text">
+                                    Light!
+                                </template>
+
+                                <template slot="body-content">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                                </template>
+                            </js-alert>
+                        </div>
                     </template>
                 </js-component>
 
@@ -152,7 +295,185 @@
                     </template>
 
                     <template slot="body-content">
-                        <js-badge></js-badge>
+
+                        <p class="text-2xl">
+                            Regular
+                        </p>
+
+                        <p class="mb-2">
+                            <span class="text-red-800">Notice</span>
+                            : the <code>light</code> color variants are encapsulated within black containers, for visibility reasons.
+                        </p>
+
+                        <js-badge
+                            :state="`success`"
+                            class="my-4"
+                        >
+                            <template slot="body-content">
+                                Success!
+                            </template>
+                        </js-badge>
+                        <js-badge
+                            :state="`warning`"
+                            class="my-4"
+                        >
+                            <template slot="body-content">
+                                Warning!
+                            </template>
+                        </js-badge>
+                        <js-badge
+                            :state="`danger`"
+                            class="my-4"
+                        >
+                            <template slot="body-content">
+                                Danger!
+                            </template>
+                        </js-badge>
+                        <js-badge
+                            :state="`info`"
+                            class="my-4"
+                        >
+                            <template slot="body-content">
+                                Info!
+                            </template>
+                        </js-badge>
+                        <js-badge
+                            :state="`primary`"
+                            class="my-4"
+                        >
+                            <template slot="body-content">
+                                Primary!
+                            </template>
+                        </js-badge>
+                        <js-badge
+                            :state="`secondary`"
+                            class="my-4"
+                        >
+                            <template slot="body-content">
+                                Secondary!
+                            </template>
+                        </js-badge>
+                        <js-badge
+                            :state="`tertiary`"
+                            class="my-4"
+                        >
+                            <template slot="body-content">
+                                Tertiary!
+                            </template>
+                        </js-badge>
+                        <js-badge
+                            :state="`dark`"
+                            class="my-4"
+                        >
+                            <template slot="body-content">
+                                Dark!
+                            </template>
+                        </js-badge>
+
+                        <div class="bg-black px-1 py-2">
+                            <js-badge
+                                :state="`light`"
+                                class="my-4"
+                            >
+                                <template slot="body-content">
+                                    Light!
+                                </template>
+                            </js-badge>
+                        </div>
+
+                        <p class="text-2xl mt-6">
+                            Outside
+                        </p>
+
+                        <p class="mb-2">
+                            <span class="text-red-800">Notice</span>
+                            : the <code>light</code> color variants are encapsulated within black containers, for visibility reasons.
+                        </p>
+
+                        <js-badge
+                            :outside="true"
+                            :state="`success`"
+                            class="my-4"
+                        >
+                            <template slot="body-content">
+                                Success!
+                            </template>
+                        </js-badge>
+                        <js-badge
+                            :outside="true"
+                            :state="`warning`"
+                            class="my-4"
+                        >
+                            <template slot="body-content">
+                                Warning!
+                            </template>
+                        </js-badge>
+                        <js-badge
+                            :outside="true"
+                            :state="`danger`"
+                            class="my-4"
+                        >
+                            <template slot="body-content">
+                                Danger!
+                            </template>
+                        </js-badge>
+                        <js-badge
+                            :outside="true"
+                            :state="`info`"
+                            class="my-4"
+                        >
+                            <template slot="body-content">
+                                Info!
+                            </template>
+                        </js-badge>
+                        <js-badge
+                            :outside="true"
+                            :state="`primary`"
+                            class="my-4"
+                        >
+                            <template slot="body-content">
+                                Primary!
+                            </template>
+                        </js-badge>
+                        <js-badge
+                            :outside="true"
+                            :state="`secondary`"
+                            class="my-4"
+                        >
+                            <template slot="body-content">
+                                Secondary!
+                            </template>
+                        </js-badge>
+                        <js-badge
+                            :outside="true"
+                            :state="`tertiary`"
+                            class="my-4"
+                        >
+                            <template slot="body-content">
+                                Tertiary!
+                            </template>
+                        </js-badge>
+                        <js-badge
+                            :outside="true"
+                            :state="`dark`"
+                            class="my-4"
+                        >
+                            <template slot="body-content">
+                                Dark!
+                            </template>
+                        </js-badge>
+
+                        <div class="bg-black px-1 py-2">
+                            <js-badge
+                                :outside="true"
+                                :state="`light`"
+                                class="my-4"
+                            >
+                                <template slot="body-content">
+                                    Light!
+                                </template>
+                            </js-badge>
+                        </div>
                     </template>
                 </js-component>
 

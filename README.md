@@ -29,6 +29,7 @@ Please see their related Licensing.
 - [Mozilla Hacks - ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
 - [Packaging Vue Components for npm](https://vuejs.org/v2/cookbook/packaging-sfc-for-npm.html#Packaging-Components-for-npm)
 - [Rollup Plugin Vue](https://rollup-plugin-vue.vuejs.org/#what-does-rollup-plugin-vue-do)
+- [WAI-ARIA Tags](https://www.w3.org/WAI/PF/aria/roles#tabpanel)
 
 ## Licensing
 This package is currently build with `MIT` in mind.

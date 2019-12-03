@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-relative-embed',
+    export default {
+        name : 'js-relative-embed',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

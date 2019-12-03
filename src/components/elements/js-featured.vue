@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-featured',
+    export default {
+        name : 'js-featured',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

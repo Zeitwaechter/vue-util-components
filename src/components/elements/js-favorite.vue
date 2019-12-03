@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-favorite',
+    export default {
+        name : 'js-favorite',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-off-canvas',
+    export default {
+        name : 'js-off-canvas',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-switch',
+    export default {
+        name : 'js-switch',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

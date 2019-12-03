@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-table-body',
+    export default {
+        name : 'js-table-body',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

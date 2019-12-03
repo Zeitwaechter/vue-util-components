@@ -1,22 +1,216 @@
-//
-//
-//
-//
-//
+/**
+ * @param statusString {string}
+ * @param outside {boolean}
+ * @return string
+ */
+function selectBackgroundColor(statusString, outside) {
+    if ( outside === void 0 ) outside = false;
+
+
+    switch (statusString) {
+        case "success":
+            if (outside) {
+                statusString = "border border-green-300";
+            } else {
+                statusString = "bg-green-300";
+            }
+            break;
+
+        case "warning":
+            if (outside) {
+                statusString = "border border-yellow-400";
+            } else {
+                statusString = "bg-yellow-400";
+            }
+            break;
+
+        case "danger":
+            if (outside) {
+                statusString = "border border-red-300";
+            } else {
+                statusString = "bg-red-300";
+            }
+            break;
+
+        case "info":
+            statusString = "bg-blue-200";
+            break;
+
+        case "primary":
+            if (outside) {
+                statusString = "border border-blue-400";
+            } else {
+                statusString = "bg-blue-400";
+            }
+            break;
+
+        case "secondary":
+            if (outside) {
+                statusString = "border border-gray-300";
+            } else {
+                statusString = "bg-gray-300";
+            }
+            break;
+
+        case "tertiary":
+            if (outside) {
+                statusString = "border border-gray-200";
+            } else {
+                statusString = "bg-gray-200";
+            }
+            break;
+
+        case "dark":
+            if (outside) {
+                statusString = "border border-black";
+            } else {
+                statusString = "bg-black";
+            }
+            break;
+
+        case "light":
+            if (outside) {
+                statusString = "border border-white";
+            } else {
+                statusString = "bg-white";
+            }
+            break;
+    }
+
+    return statusString;
+}
+
+/**
+ * @param statusString {string}
+ * @param outside {boolean}
+ * @return string
+ */
+function selectFontColor(statusString, outside) {
+    if ( outside === void 0 ) outside = false;
+
+
+    switch (statusString) {
+        case "success":
+            if (outside) {
+                statusString = "text-gray-800";
+            } else {
+                statusString = "text-green-300";
+            }
+            break;
+
+        case "warning":
+            if (outside) {
+                statusString = "text-gray-800";
+            } else {
+                statusString = "text-yellow-400";
+            }
+            break;
+
+        case "danger":
+            if (outside) {
+                statusString = "text-gray-800";
+            } else {
+                statusString = "text-red-300";
+            }
+            break;
+
+        case "info":
+            if (outside) {
+                statusString = "text-gray-800";
+            } else {
+                statusString = "text-blue-200";
+            }
+            break;
+
+        case "primary":
+            if (outside) {
+                statusString = "text-gray-800";
+            } else {
+                statusString = "text-blue-400";
+            }
+            break;
+
+        case "secondary":
+            if (outside) {
+                statusString = "text-gray-800";
+            } else {
+                statusString = "text-gray-300";
+            }
+            break;
+
+        case "tertiary":
+            if (outside) {
+                statusString = "text-gray-800";
+            } else {
+                statusString = "text-gray-200";
+            }
+            break;
+
+        case "dark":
+            if (outside) {
+                statusString = "text-gray-800";
+            } else {
+                statusString = "text-black";
+            }
+            break;
+
+        case "light":
+            if (outside) {
+                statusString = "text-gray-800";
+            } else {
+                statusString = "text-white";
+            }
+            break;
+    }
+
+    return statusString;
+}
+
 //
 
 var script = {
-  name : 'js-alert',
+    name : 'js-alert',
 
-  components : {},
+    props : {
+        state   : {
+            default : "primary",
+            type    : String,
+        },
+        outside : {
+            default : false,
+            type    : Boolean,
+        }
+    },
 
-  mounted: function mounted() {
-    //
-  },
+    components : {},
 
-  created: function created() {
-    //
-  },
+    computed : {
+        /**
+         * @return {string}
+         */
+        getBackgroundColorState: function getBackgroundColorState() {
+            return selectBackgroundColor(this.state, this.outside);
+        },
+
+        /**
+         * @return {string}
+         */
+        getFontColorState: function getFontColorState() {
+            return selectFontColor(this.state, this.outside);
+        },
+    },
+
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 function normalizeComponent(template, style, script, scopeId, isFunctionalTemplate, moduleIdentifier /* server only */, shadowMode, createInjector, createInjectorSSR, createInjectorShadow) {
@@ -101,8 +295,8 @@ var isOldIE = typeof navigator !== 'undefined' &&
 var __vue_script__ = script;
 
 /* template */
-var __vue_render__ = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__ = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-alert"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_render__ = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-alert",class:{ getBackgroundColorState: _vm.getBackgroundColorState, getFontColorState: _vm.getFontColorState }},[(_vm.$slots.hasOwnProperty("heading-text"))?[_c('p',{staticClass:"font-bold"},[_vm._t("heading-text")],2)]:_vm._e(),_vm._v(" "),(_vm.$slots.hasOwnProperty("body-content"))?[_c('div',{},[_vm._t("body-content")],2)]:_vm._e()],2)};
+var __vue_staticRenderFns__ = [];
 
   /* style */
   var __vue_inject_styles__ = undefined;
@@ -134,32 +328,58 @@ var __vue_staticRenderFns__ = [function () {var _vm=this;var _h=_vm.$createEleme
   );
 
 //
-//
-//
-//
-//
-//
 
 var script$1 = {
-  name : 'js-badge',
+    name : 'js-badge',
 
-  components : {},
+    props : {
+        state   : {
+            default : "primary",
+            type    : String,
+        },
+        outside : {
+            default : false,
+            type    : Boolean,
+        }
+    },
 
-  mounted: function mounted() {
-    //
-  },
+    components : {},
 
-  created: function created() {
-    //
-  },
+    computed : {
+        /**
+         * @return {string}
+         */
+        getBackgroundColorState: function getBackgroundColorState() {
+            return selectBackgroundColor(this.state, this.outside);
+        },
+
+        /**
+         * @return {string}
+         */
+        getFontColorState: function getFontColorState() {
+            return selectFontColor(this.state, this.outside);
+        },
+    },
+
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
 var __vue_script__$1 = script$1;
 
 /* template */
-var __vue_render__$1 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$1 = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-badge"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_render__$1 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-badge",class:{ getBackgroundColorState: _vm.getBackgroundColorState, getFontColorState: _vm.getFontColorState }},[_c('p',[_vm._v("This is a test!")])])};
+var __vue_staticRenderFns__$1 = [];
 
   /* style */
   var __vue_inject_styles__$1 = undefined;
@@ -191,24 +411,26 @@ var __vue_staticRenderFns__$1 = [function () {var _vm=this;var _h=_vm.$createEle
   );
 
 //
-//
-//
-//
-//
-//
 
 var script$2 = {
-  name : 'js-breadcrumb',
+    name : 'js-breadcrumb',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -255,17 +477,24 @@ var __vue_staticRenderFns__$2 = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$3 = {
-  name : 'js-button',
+    name : 'js-button',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -312,17 +541,24 @@ var __vue_staticRenderFns__$3 = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$4 = {
-  name : 'js-dislike',
+    name : 'js-card',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -330,7 +566,7 @@ var __vue_script__$4 = script$4;
 
 /* template */
 var __vue_render__$4 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$4 = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-dislike"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$4 = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-card"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$4 = undefined;
@@ -369,17 +605,24 @@ var __vue_staticRenderFns__$4 = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$5 = {
-  name : 'js-emoticon',
+    name : 'js-dislike',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -387,7 +630,7 @@ var __vue_script__$5 = script$5;
 
 /* template */
 var __vue_render__$5 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$5 = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-emoticon"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$5 = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-dislike"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$5 = undefined;
@@ -426,17 +669,24 @@ var __vue_staticRenderFns__$5 = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$6 = {
-  name : 'js-favorite',
+    name : 'js-emoticon',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -444,7 +694,7 @@ var __vue_script__$6 = script$6;
 
 /* template */
 var __vue_render__$6 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$6 = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-favorite"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$6 = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-emoticon"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$6 = undefined;
@@ -483,17 +733,24 @@ var __vue_staticRenderFns__$6 = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$7 = {
-  name : 'js-featured',
+    name : 'js-favorite',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -501,7 +758,7 @@ var __vue_script__$7 = script$7;
 
 /* template */
 var __vue_render__$7 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$7 = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-featured"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$7 = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-favorite"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$7 = undefined;
@@ -540,17 +797,24 @@ var __vue_staticRenderFns__$7 = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$8 = {
-  name : 'js-form-input',
+    name : 'js-featured',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -558,7 +822,7 @@ var __vue_script__$8 = script$8;
 
 /* template */
 var __vue_render__$8 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$8 = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-form-input"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$8 = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-featured"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$8 = undefined;
@@ -597,17 +861,24 @@ var __vue_staticRenderFns__$8 = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$9 = {
-  name : 'js-icon',
+    name : 'js-figure',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -615,7 +886,7 @@ var __vue_script__$9 = script$9;
 
 /* template */
 var __vue_render__$9 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$9 = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-icon"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$9 = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-figure"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$9 = undefined;
@@ -654,17 +925,24 @@ var __vue_staticRenderFns__$9 = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$a = {
-  name : 'js-like',
+    name : 'js-form-input',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -672,7 +950,7 @@ var __vue_script__$a = script$a;
 
 /* template */
 var __vue_render__$a = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$a = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-like"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$a = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-form-input"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$a = undefined;
@@ -711,17 +989,24 @@ var __vue_staticRenderFns__$a = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$b = {
-  name : 'js-list-item',
+    name : 'js-icon',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -729,7 +1014,7 @@ var __vue_script__$b = script$b;
 
 /* template */
 var __vue_render__$b = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$b = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-list-item"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$b = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-icon"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$b = undefined;
@@ -768,17 +1053,24 @@ var __vue_staticRenderFns__$b = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$c = {
-  name : 'js-menu-entry',
+    name : 'js-like',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -786,7 +1078,7 @@ var __vue_script__$c = script$c;
 
 /* template */
 var __vue_render__$c = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$c = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-menu-entry"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$c = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-like"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$c = undefined;
@@ -825,17 +1117,25 @@ var __vue_staticRenderFns__$c = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$d = {
-  name : 'js-post',
+    name : 'js-list-item',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -843,7 +1143,7 @@ var __vue_script__$d = script$d;
 
 /* template */
 var __vue_render__$d = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$d = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-post"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$d = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-list-item"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$d = undefined;
@@ -882,17 +1182,24 @@ var __vue_staticRenderFns__$d = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$e = {
-  name : 'js-spinner',
+    name : 'js-menu-entry',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -900,7 +1207,7 @@ var __vue_script__$e = script$e;
 
 /* template */
 var __vue_render__$e = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$e = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-spinner"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$e = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-menu-entry"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$e = undefined;
@@ -939,17 +1246,24 @@ var __vue_staticRenderFns__$e = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$f = {
-  name : 'js-tab',
+    name : 'js-post',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -957,7 +1271,7 @@ var __vue_script__$f = script$f;
 
 /* template */
 var __vue_render__$f = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$f = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-tab"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$f = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-post"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$f = undefined;
@@ -996,17 +1310,24 @@ var __vue_staticRenderFns__$f = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$g = {
-  name : 'js-table-body',
+    name : 'js-spinner',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -1014,7 +1335,7 @@ var __vue_script__$g = script$g;
 
 /* template */
 var __vue_render__$g = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$g = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-table-body"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$g = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-spinner"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$g = undefined;
@@ -1053,17 +1374,24 @@ var __vue_staticRenderFns__$g = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$h = {
-  name : 'js-table-foot',
+    name : 'js-tab',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -1071,7 +1399,7 @@ var __vue_script__$h = script$h;
 
 /* template */
 var __vue_render__$h = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$h = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-table-foot"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$h = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-tab"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$h = undefined;
@@ -1110,17 +1438,24 @@ var __vue_staticRenderFns__$h = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$i = {
-  name : 'js-table-head',
+    name : 'js-table-body',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -1128,7 +1463,7 @@ var __vue_script__$i = script$i;
 
 /* template */
 var __vue_render__$i = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$i = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-table-head"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$i = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-table-body"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$i = undefined;
@@ -1166,19 +1501,25 @@ var __vue_staticRenderFns__$i = [function () {var _vm=this;var _h=_vm.$createEle
 //
 //
 
-  // @info maybe redundant to figure
 var script$j = {
-  name : 'js-thumbnail',
+    name : 'js-table-foot',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -1186,7 +1527,7 @@ var __vue_script__$j = script$j;
 
 /* template */
 var __vue_render__$j = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$j = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-thumbnail"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$j = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-table-foot"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$j = undefined;
@@ -1225,17 +1566,24 @@ var __vue_staticRenderFns__$j = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$k = {
-  name : 'js-video',
+    name : 'js-table-head',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -1243,7 +1591,7 @@ var __vue_script__$k = script$k;
 
 /* template */
 var __vue_render__$k = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$k = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-video"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$k = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-table-head"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$k = undefined;
@@ -1281,18 +1629,26 @@ var __vue_staticRenderFns__$k = [function () {var _vm=this;var _h=_vm.$createEle
 //
 //
 
+// @info maybe redundant to figure
 var script$l = {
-  name : 'js-accordion-menu',
+    name : 'js-thumbnail',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -1300,7 +1656,7 @@ var __vue_script__$l = script$l;
 
 /* template */
 var __vue_render__$l = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$l = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-accordion-menu"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$l = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-thumbnail"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$l = undefined;
@@ -1339,17 +1695,24 @@ var __vue_staticRenderFns__$l = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$m = {
-  name : 'js-breadcrumbs',
+    name : 'js-video',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -1357,7 +1720,7 @@ var __vue_script__$m = script$m;
 
 /* template */
 var __vue_render__$m = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$m = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-breadcrumbs"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$m = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-video"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$m = undefined;
@@ -1396,17 +1759,24 @@ var __vue_staticRenderFns__$m = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$n = {
-  name : 'js-button-group',
+    name : 'js-accordion-menu',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -1414,7 +1784,7 @@ var __vue_script__$n = script$n;
 
 /* template */
 var __vue_render__$n = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$n = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-button-group"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$n = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-accordion-menu"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$n = undefined;
@@ -1451,35 +1821,34 @@ var __vue_staticRenderFns__$n = [function () {var _vm=this;var _h=_vm.$createEle
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
 var script$o = {
-  name : 'js-component',
+    name : 'js-breadcrumbs',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
 var __vue_script__$o = script$o;
 
 /* template */
-var __vue_render__$o = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-component p-6 bg-gray-200 rounded-lg shadow-xl mx-6"},[_c('p',{staticClass:"text-lg text-bold mb-2"},[_vm._t("heading-text")],2),_vm._v(" "),_c('div',{staticClass:"p-6 bg-white rounded-lg"},[_vm._t("body-content")],2)])};
-var __vue_staticRenderFns__$o = [];
+var __vue_render__$o = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
+var __vue_staticRenderFns__$o = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-breadcrumbs"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$o = undefined;
@@ -1518,17 +1887,24 @@ var __vue_staticRenderFns__$o = [];
 //
 
 var script$p = {
-  name : 'js-carousel',
+    name : 'js-button-group',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -1536,7 +1912,7 @@ var __vue_script__$p = script$p;
 
 /* template */
 var __vue_render__$p = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$p = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-carousel"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$p = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-button-group"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$p = undefined;
@@ -1573,27 +1949,42 @@ var __vue_staticRenderFns__$p = [function () {var _vm=this;var _h=_vm.$createEle
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 var script$q = {
-  name : 'js-drill-down-menu',
+    name : 'js-component',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
 var __vue_script__$q = script$q;
 
 /* template */
-var __vue_render__$q = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$q = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-drill-down-menu"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_render__$q = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-component p-6 bg-gray-200 rounded-lg shadow-md mx-6 my-6"},[_c('p',{staticClass:"text-lg font-bold mb-2"},[_vm._t("heading-text")],2),_vm._v(" "),_c('div',{staticClass:"p-6 bg-white rounded-lg"},[_vm._t("body-content")],2)])};
+var __vue_staticRenderFns__$q = [];
 
   /* style */
   var __vue_inject_styles__$q = undefined;
@@ -1632,17 +2023,24 @@ var __vue_staticRenderFns__$q = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$r = {
-  name : 'js-drop-down-menu',
+    name : 'js-carousel',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -1650,7 +2048,7 @@ var __vue_script__$r = script$r;
 
 /* template */
 var __vue_render__$r = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$r = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-drop-down-menu"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$r = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-carousel"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$r = undefined;
@@ -1689,17 +2087,24 @@ var __vue_staticRenderFns__$r = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$s = {
-  name : 'js-footer',
+    name : 'js-drill-down-menu',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -1707,7 +2112,7 @@ var __vue_script__$s = script$s;
 
 /* template */
 var __vue_render__$s = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$s = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-footer"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$s = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-drill-down-menu"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$s = undefined;
@@ -1746,17 +2151,24 @@ var __vue_staticRenderFns__$s = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$t = {
-  name : 'js-form',
+    name : 'js-drop-down-menu',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -1764,7 +2176,7 @@ var __vue_script__$t = script$t;
 
 /* template */
 var __vue_render__$t = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$t = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-form"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$t = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-drop-down-menu"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$t = undefined;
@@ -1803,17 +2215,24 @@ var __vue_staticRenderFns__$t = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$u = {
-  name : 'js-form-input-group',
+    name : 'js-footer',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -1821,7 +2240,7 @@ var __vue_script__$u = script$u;
 
 /* template */
 var __vue_render__$u = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$u = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-form-input-group"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$u = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-footer"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$u = undefined;
@@ -1860,17 +2279,24 @@ var __vue_staticRenderFns__$u = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$v = {
-  name : 'js-gallery',
+    name : 'js-form',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -1878,7 +2304,7 @@ var __vue_script__$v = script$v;
 
 /* template */
 var __vue_render__$v = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$v = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-gallery"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$v = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-form"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$v = undefined;
@@ -1917,17 +2343,24 @@ var __vue_staticRenderFns__$v = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$w = {
-  name : 'js-header',
+    name : 'js-form-input-group',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -1935,7 +2368,7 @@ var __vue_script__$w = script$w;
 
 /* template */
 var __vue_render__$w = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$w = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-header"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$w = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-form-input-group"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$w = undefined;
@@ -1974,17 +2407,24 @@ var __vue_staticRenderFns__$w = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$x = {
-  name : 'js-jumbotron',
+    name : 'js-gallery',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -1992,7 +2432,7 @@ var __vue_script__$x = script$x;
 
 /* template */
 var __vue_render__$x = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$x = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-jumbotron"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$x = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-gallery"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$x = undefined;
@@ -2031,17 +2471,24 @@ var __vue_staticRenderFns__$x = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$y = {
-  name : 'js-list',
+    name : 'js-header',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -2049,7 +2496,7 @@ var __vue_script__$y = script$y;
 
 /* template */
 var __vue_render__$y = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$y = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-list"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$y = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-header"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$y = undefined;
@@ -2088,17 +2535,24 @@ var __vue_staticRenderFns__$y = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$z = {
-  name : 'js-menu',
+    name : 'js-jumbotron',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -2106,7 +2560,7 @@ var __vue_script__$z = script$z;
 
 /* template */
 var __vue_render__$z = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$z = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-menu"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$z = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-jumbotron"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$z = undefined;
@@ -2145,17 +2599,24 @@ var __vue_staticRenderFns__$z = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$A = {
-  name : 'js-modal',
+    name : 'js-list',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -2163,7 +2624,7 @@ var __vue_script__$A = script$A;
 
 /* template */
 var __vue_render__$A = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$A = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-modal"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$A = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-list"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$A = undefined;
@@ -2202,17 +2663,24 @@ var __vue_staticRenderFns__$A = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$B = {
-  name : 'js-navigation',
+    name : 'js-menu',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -2220,7 +2688,7 @@ var __vue_script__$B = script$B;
 
 /* template */
 var __vue_render__$B = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$B = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-navigation"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$B = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-menu"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$B = undefined;
@@ -2259,17 +2727,24 @@ var __vue_staticRenderFns__$B = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$C = {
-  name : 'js-navigation-bar',
+    name : 'js-modal',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -2277,7 +2752,7 @@ var __vue_script__$C = script$C;
 
 /* template */
 var __vue_render__$C = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$C = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-navigation-bar"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$C = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-modal"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$C = undefined;
@@ -2316,17 +2791,24 @@ var __vue_staticRenderFns__$C = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$D = {
-  name : 'js-off-canvas',
+    name : 'js-navigation',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -2334,7 +2816,7 @@ var __vue_script__$D = script$D;
 
 /* template */
 var __vue_render__$D = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$D = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-off-canvas"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$D = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-navigation"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$D = undefined;
@@ -2373,17 +2855,24 @@ var __vue_staticRenderFns__$D = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$E = {
-  name : 'js-pagination',
+    name : 'js-navigation-bar',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -2391,7 +2880,7 @@ var __vue_script__$E = script$E;
 
 /* template */
 var __vue_render__$E = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$E = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-pagination"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$E = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-navigation-bar"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$E = undefined;
@@ -2428,33 +2917,34 @@ var __vue_staticRenderFns__$E = [function () {var _vm=this;var _h=_vm.$createEle
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 var script$F = {
-  name : 'js-partial',
+    name : 'js-off-canvas',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
 var __vue_script__$F = script$F;
 
 /* template */
-var __vue_render__$F = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-partial p-6 bg-white rounded-lg shadow-xl mx-6"},[_c('p',{staticClass:"text-2xl font-bold mb-4"},[_vm._t("heading-text")],2),_vm._v(" "),_vm._t("body-content")],2)};
-var __vue_staticRenderFns__$F = [];
+var __vue_render__$F = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
+var __vue_staticRenderFns__$F = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-off-canvas"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$F = undefined;
@@ -2493,17 +2983,24 @@ var __vue_staticRenderFns__$F = [];
 //
 
 var script$G = {
-  name : 'js-progress-bar',
+    name : 'js-pagination',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -2511,7 +3008,7 @@ var __vue_script__$G = script$G;
 
 /* template */
 var __vue_render__$G = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$G = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-progress-bar"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$G = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-pagination"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$G = undefined;
@@ -2548,27 +3045,40 @@ var __vue_staticRenderFns__$G = [function () {var _vm=this;var _h=_vm.$createEle
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 var script$H = {
-  name : 'js-rating',
+    name : 'js-partial',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
 var __vue_script__$H = script$H;
 
 /* template */
-var __vue_render__$H = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$H = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-rating"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_render__$H = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-partial p-6 bg-white rounded-lg shadow-xl mx-6"},[_c('p',{staticClass:"text-2xl font-bold mb-4"},[_vm._t("heading-text")],2),_vm._v(" "),_vm._t("body-content")],2)};
+var __vue_staticRenderFns__$H = [];
 
   /* style */
   var __vue_inject_styles__$H = undefined;
@@ -2607,17 +3117,24 @@ var __vue_staticRenderFns__$H = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$I = {
-  name : 'js-relative-embed',
+    name : 'js-progress-bar',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -2625,7 +3142,7 @@ var __vue_script__$I = script$I;
 
 /* template */
 var __vue_render__$I = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$I = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-relative-embed"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$I = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-progress-bar"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$I = undefined;
@@ -2664,17 +3181,24 @@ var __vue_staticRenderFns__$I = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$J = {
-  name : 'js-slider',
+    name : 'js-rating',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -2682,7 +3206,7 @@ var __vue_script__$J = script$J;
 
 /* template */
 var __vue_render__$J = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$J = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-slider"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$J = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-rating"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$J = undefined;
@@ -2721,17 +3245,24 @@ var __vue_staticRenderFns__$J = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$K = {
-  name : 'js-switch',
+    name : 'js-relative-embed',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -2739,7 +3270,7 @@ var __vue_script__$K = script$K;
 
 /* template */
 var __vue_render__$K = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$K = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-switch"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$K = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-relative-embed"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$K = undefined;
@@ -2778,17 +3309,24 @@ var __vue_staticRenderFns__$K = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$L = {
-  name : 'js-table',
+    name : 'js-slider',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -2796,7 +3334,7 @@ var __vue_script__$L = script$L;
 
 /* template */
 var __vue_render__$L = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$L = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-table"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$L = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-slider"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$L = undefined;
@@ -2835,17 +3373,24 @@ var __vue_staticRenderFns__$L = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$M = {
-  name : 'js-tabs',
+    name : 'js-switch',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -2853,7 +3398,7 @@ var __vue_script__$M = script$M;
 
 /* template */
 var __vue_render__$M = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$M = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-tabs"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$M = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-switch"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$M = undefined;
@@ -2892,17 +3437,24 @@ var __vue_staticRenderFns__$M = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$N = {
-  name : 'js-toast',
+    name : 'js-table',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -2910,7 +3462,7 @@ var __vue_script__$N = script$N;
 
 /* template */
 var __vue_render__$N = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$N = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-toast"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$N = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-table"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$N = undefined;
@@ -2949,17 +3501,24 @@ var __vue_staticRenderFns__$N = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$O = {
-  name : 'js-tooltip',
+    name : 'js-tabs',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -2967,7 +3526,7 @@ var __vue_script__$O = script$O;
 
 /* template */
 var __vue_render__$O = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$O = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-tooltip"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$O = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-tabs"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$O = undefined;
@@ -3006,17 +3565,24 @@ var __vue_staticRenderFns__$O = [function () {var _vm=this;var _h=_vm.$createEle
 //
 
 var script$P = {
-  name : 'js-top-bar',
+    name : 'js-toast',
 
-  components : {},
+    components : {},
 
-  mounted: function mounted() {
-    //
-  },
+    computed : {
+    },
 
-  created: function created() {
-    //
-  },
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
 };
 
 /* script */
@@ -3024,7 +3590,7 @@ var __vue_script__$P = script$P;
 
 /* template */
 var __vue_render__$P = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
-var __vue_staticRenderFns__$P = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-top-bar"},[_c('p',[_vm._v("This is a test!")])])}];
+var __vue_staticRenderFns__$P = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-toast"},[_c('p',[_vm._v("This is a test!")])])}];
 
   /* style */
   var __vue_inject_styles__$P = undefined;
@@ -3055,62 +3621,192 @@ var __vue_staticRenderFns__$P = [function () {var _vm=this;var _h=_vm.$createEle
     undefined
   );
 
+//
+//
+//
+//
+//
+//
+
+var script$Q = {
+    name : 'js-tooltip',
+
+    components : {},
+
+    computed : {
+    },
+
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
+};
+
+/* script */
+var __vue_script__$Q = script$Q;
+
+/* template */
+var __vue_render__$Q = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
+var __vue_staticRenderFns__$Q = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-tooltip"},[_c('p',[_vm._v("This is a test!")])])}];
+
+  /* style */
+  var __vue_inject_styles__$Q = undefined;
+  /* scoped */
+  var __vue_scope_id__$Q = undefined;
+  /* module identifier */
+  var __vue_module_identifier__$Q = undefined;
+  /* functional template */
+  var __vue_is_functional_template__$Q = false;
+  /* style inject */
+  
+  /* style inject SSR */
+  
+  /* style inject shadow dom */
+  
+
+  
+  var __vue_component__$Q = normalizeComponent(
+    { render: __vue_render__$Q, staticRenderFns: __vue_staticRenderFns__$Q },
+    __vue_inject_styles__$Q,
+    __vue_script__$Q,
+    __vue_scope_id__$Q,
+    __vue_is_functional_template__$Q,
+    __vue_module_identifier__$Q,
+    false,
+    undefined,
+    undefined,
+    undefined
+  );
+
+//
+//
+//
+//
+//
+//
+
+var script$R = {
+    name : 'js-top-bar',
+
+    components : {},
+
+    computed : {
+    },
+
+    methods : {
+        //
+    },
+
+    mounted: function mounted() {
+        //
+    },
+
+    created: function created() {
+        //
+    },
+};
+
+/* script */
+var __vue_script__$R = script$R;
+
+/* template */
+var __vue_render__$R = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)};
+var __vue_staticRenderFns__$R = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"js-top-bar"},[_c('p',[_vm._v("This is a test!")])])}];
+
+  /* style */
+  var __vue_inject_styles__$R = undefined;
+  /* scoped */
+  var __vue_scope_id__$R = undefined;
+  /* module identifier */
+  var __vue_module_identifier__$R = undefined;
+  /* functional template */
+  var __vue_is_functional_template__$R = false;
+  /* style inject */
+  
+  /* style inject SSR */
+  
+  /* style inject shadow dom */
+  
+
+  
+  var __vue_component__$R = normalizeComponent(
+    { render: __vue_render__$R, staticRenderFns: __vue_staticRenderFns__$R },
+    __vue_inject_styles__$R,
+    __vue_script__$R,
+    __vue_scope_id__$R,
+    __vue_is_functional_template__$R,
+    __vue_module_identifier__$R,
+    false,
+    undefined,
+    undefined,
+    undefined
+  );
+
 // Elements
 
 var components = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  JsAlert: __vue_component__,
-  JsBadge: __vue_component__$1,
-  JsBreadcrumb: __vue_component__$2,
-  JsButton: __vue_component__$3,
-  JsDislike: __vue_component__$4,
-  JsEmoticon: __vue_component__$5,
-  JsFavorite: __vue_component__$6,
-  JsFeatured: __vue_component__$7,
-  JsFormInput: __vue_component__$8,
-  JsIcon: __vue_component__$9,
-  JsLike: __vue_component__$a,
-  JsListItem: __vue_component__$b,
-  JsMenuEntry: __vue_component__$c,
-  JsPost: __vue_component__$d,
-  JsSpinner: __vue_component__$e,
-  JsTab: __vue_component__$f,
-  JsTableBody: __vue_component__$g,
-  JsTableFoot: __vue_component__$h,
-  JsTableHead: __vue_component__$i,
-  JsThumbnail: __vue_component__$j,
-  JsVideo: __vue_component__$k,
-  JsAccordionMenu: __vue_component__$l,
-  JsBreadcrumbs: __vue_component__$m,
-  JsButtonGroup: __vue_component__$n,
-  JsComponent: __vue_component__$o,
-  JsCarousel: __vue_component__$p,
-  JsDrillDownMenu: __vue_component__$q,
-  JsDropDownMenu: __vue_component__$r,
-  JsFooter: __vue_component__$s,
-  JsForm: __vue_component__$t,
-  JsFormInputGroup: __vue_component__$u,
-  JsGallery: __vue_component__$v,
-  JsHeader: __vue_component__$w,
-  JsJumbotron: __vue_component__$x,
-  JsList: __vue_component__$y,
-  JsMenu: __vue_component__$z,
-  JsModal: __vue_component__$A,
-  JsNavigation: __vue_component__$B,
-  JsNavigationBar: __vue_component__$C,
-  JsOffCanvas: __vue_component__$D,
-  JsPagination: __vue_component__$E,
-  JsPartial: __vue_component__$F,
-  JsProgressBar: __vue_component__$G,
-  JsRating: __vue_component__$H,
-  JsRelativeEmbed: __vue_component__$I,
-  JsSlider: __vue_component__$J,
-  JsSwitch: __vue_component__$K,
-  JsTable: __vue_component__$L,
-  JsTabs: __vue_component__$M,
-  JsToast: __vue_component__$N,
-  JsTooltip: __vue_component__$O,
-  JsTopBar: __vue_component__$P
+    __proto__: null,
+    JsAlert: __vue_component__,
+    JsBadge: __vue_component__$1,
+    JsBreadcrumb: __vue_component__$2,
+    JsButton: __vue_component__$3,
+    JsCard: __vue_component__$4,
+    JsDislike: __vue_component__$5,
+    JsEmoticon: __vue_component__$6,
+    JsFavorite: __vue_component__$7,
+    JsFeatured: __vue_component__$8,
+    JsFigure: __vue_component__$9,
+    JsFormInput: __vue_component__$a,
+    JsIcon: __vue_component__$b,
+    JsLike: __vue_component__$c,
+    JsListItem: __vue_component__$d,
+    JsMenuEntry: __vue_component__$e,
+    JsPost: __vue_component__$f,
+    JsSpinner: __vue_component__$g,
+    JsTab: __vue_component__$h,
+    JsTableBody: __vue_component__$i,
+    JsTableFoot: __vue_component__$j,
+    JsTableHead: __vue_component__$k,
+    JsThumbnail: __vue_component__$l,
+    JsVideo: __vue_component__$m,
+    JsAccordionMenu: __vue_component__$n,
+    JsBreadcrumbs: __vue_component__$o,
+    JsButtonGroup: __vue_component__$p,
+    JsComponent: __vue_component__$q,
+    JsCarousel: __vue_component__$r,
+    JsDrillDownMenu: __vue_component__$s,
+    JsDropDownMenu: __vue_component__$t,
+    JsFooter: __vue_component__$u,
+    JsForm: __vue_component__$v,
+    JsFormInputGroup: __vue_component__$w,
+    JsGallery: __vue_component__$x,
+    JsHeader: __vue_component__$y,
+    JsJumbotron: __vue_component__$z,
+    JsList: __vue_component__$A,
+    JsMenu: __vue_component__$B,
+    JsModal: __vue_component__$C,
+    JsNavigation: __vue_component__$D,
+    JsNavigationBar: __vue_component__$E,
+    JsOffCanvasMenu: __vue_component__$F,
+    JsPagination: __vue_component__$G,
+    JsPartial: __vue_component__$H,
+    JsProgressBar: __vue_component__$I,
+    JsRating: __vue_component__$J,
+    JsRelativeEmbed: __vue_component__$K,
+    JsSlider: __vue_component__$L,
+    JsSwitch: __vue_component__$M,
+    JsTable: __vue_component__$N,
+    JsTabs: __vue_component__$O,
+    JsToast: __vue_component__$P,
+    JsTooltip: __vue_component__$Q,
+    JsTopBar: __vue_component__$R
 });
 
 //// Wrapper (internal)
@@ -3154,4 +3850,4 @@ if (
 }
 
 export default plugin;
-export { __vue_component__$l as JsAccordionMenu, __vue_component__ as JsAlert, __vue_component__$1 as JsBadge, __vue_component__$2 as JsBreadcrumb, __vue_component__$m as JsBreadcrumbs, __vue_component__$3 as JsButton, __vue_component__$n as JsButtonGroup, __vue_component__$p as JsCarousel, __vue_component__$o as JsComponent, __vue_component__$4 as JsDislike, __vue_component__$q as JsDrillDownMenu, __vue_component__$r as JsDropDownMenu, __vue_component__$5 as JsEmoticon, __vue_component__$6 as JsFavorite, __vue_component__$7 as JsFeatured, __vue_component__$s as JsFooter, __vue_component__$t as JsForm, __vue_component__$8 as JsFormInput, __vue_component__$u as JsFormInputGroup, __vue_component__$v as JsGallery, __vue_component__$w as JsHeader, __vue_component__$9 as JsIcon, __vue_component__$x as JsJumbotron, __vue_component__$a as JsLike, __vue_component__$y as JsList, __vue_component__$b as JsListItem, __vue_component__$z as JsMenu, __vue_component__$c as JsMenuEntry, __vue_component__$A as JsModal, __vue_component__$B as JsNavigation, __vue_component__$C as JsNavigationBar, __vue_component__$D as JsOffCanvas, __vue_component__$E as JsPagination, __vue_component__$F as JsPartial, __vue_component__$d as JsPost, __vue_component__$G as JsProgressBar, __vue_component__$H as JsRating, __vue_component__$I as JsRelativeEmbed, __vue_component__$J as JsSlider, __vue_component__$e as JsSpinner, __vue_component__$K as JsSwitch, __vue_component__$f as JsTab, __vue_component__$L as JsTable, __vue_component__$g as JsTableBody, __vue_component__$h as JsTableFoot, __vue_component__$i as JsTableHead, __vue_component__$M as JsTabs, __vue_component__$j as JsThumbnail, __vue_component__$N as JsToast, __vue_component__$O as JsTooltip, __vue_component__$P as JsTopBar, __vue_component__$k as JsVideo, install };
+export { __vue_component__$n as JsAccordionMenu, __vue_component__ as JsAlert, __vue_component__$1 as JsBadge, __vue_component__$2 as JsBreadcrumb, __vue_component__$o as JsBreadcrumbs, __vue_component__$3 as JsButton, __vue_component__$p as JsButtonGroup, __vue_component__$4 as JsCard, __vue_component__$r as JsCarousel, __vue_component__$q as JsComponent, __vue_component__$5 as JsDislike, __vue_component__$s as JsDrillDownMenu, __vue_component__$t as JsDropDownMenu, __vue_component__$6 as JsEmoticon, __vue_component__$7 as JsFavorite, __vue_component__$8 as JsFeatured, __vue_component__$9 as JsFigure, __vue_component__$u as JsFooter, __vue_component__$v as JsForm, __vue_component__$a as JsFormInput, __vue_component__$w as JsFormInputGroup, __vue_component__$x as JsGallery, __vue_component__$y as JsHeader, __vue_component__$b as JsIcon, __vue_component__$z as JsJumbotron, __vue_component__$c as JsLike, __vue_component__$A as JsList, __vue_component__$d as JsListItem, __vue_component__$B as JsMenu, __vue_component__$e as JsMenuEntry, __vue_component__$C as JsModal, __vue_component__$D as JsNavigation, __vue_component__$E as JsNavigationBar, __vue_component__$F as JsOffCanvasMenu, __vue_component__$G as JsPagination, __vue_component__$H as JsPartial, __vue_component__$f as JsPost, __vue_component__$I as JsProgressBar, __vue_component__$J as JsRating, __vue_component__$K as JsRelativeEmbed, __vue_component__$L as JsSlider, __vue_component__$g as JsSpinner, __vue_component__$M as JsSwitch, __vue_component__$h as JsTab, __vue_component__$N as JsTable, __vue_component__$i as JsTableBody, __vue_component__$j as JsTableFoot, __vue_component__$k as JsTableHead, __vue_component__$O as JsTabs, __vue_component__$l as JsThumbnail, __vue_component__$P as JsToast, __vue_component__$Q as JsTooltip, __vue_component__$R as JsTopBar, __vue_component__$m as JsVideo, install };

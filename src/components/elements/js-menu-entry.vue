@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-menu-entry',
+    export default {
+        name : 'js-menu-entry',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

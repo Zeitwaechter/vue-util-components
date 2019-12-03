@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-video',
+    export default {
+        name : 'js-video',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-toast',
+    export default {
+        name : 'js-toast',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

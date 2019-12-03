@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-accordion-menu',
+    export default {
+        name : 'js-accordion-menu',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

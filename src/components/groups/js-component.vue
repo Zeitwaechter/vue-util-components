@@ -13,17 +13,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-component',
+    export default {
+        name : 'js-component',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

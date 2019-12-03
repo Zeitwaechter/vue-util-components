@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-emoticon',
+    export default {
+        name : 'js-emoticon',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

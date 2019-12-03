@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-header',
+    export default {
+        name : 'js-header',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

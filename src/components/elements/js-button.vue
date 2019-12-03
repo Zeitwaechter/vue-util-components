@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-button',
+    export default {
+        name : 'js-button',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

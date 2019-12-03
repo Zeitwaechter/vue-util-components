@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-progress-bar',
+    export default {
+        name : 'js-progress-bar',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

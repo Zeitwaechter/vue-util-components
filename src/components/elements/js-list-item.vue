@@ -5,17 +5,25 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-list-item',
+    export default {
+        name : 'js-list-item',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

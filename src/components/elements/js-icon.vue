@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-icon',
+    export default {
+        name : 'js-icon',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

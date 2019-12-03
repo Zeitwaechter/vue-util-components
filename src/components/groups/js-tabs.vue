@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-tabs',
+    export default {
+        name : 'js-tabs',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

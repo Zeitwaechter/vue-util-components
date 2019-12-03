@@ -5,17 +5,27 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-breadcrumb',
+    import { selectBackgroundColor } from "../helpers/bg-color";
+    import { selectFontColor }       from "../helpers/font-color";
 
-    components : {},
+    export default {
+        name : 'js-breadcrumb',
 
-    mounted() {
-      //
-    },
+        components : {},
 
-    created() {
-      //
-    },
-  }
+        computed : {
+        },
+
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

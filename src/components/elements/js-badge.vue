@@ -1,21 +1,58 @@
 <template>
-    <div class="js-badge">
+    <div
+        class="js-badge"
+        :class="{ getBackgroundColorState, getFontColorState }"
+    >
         <p>This is a test!</p>
     </div>
 </template>
 
 <script>
-  export default {
-    name : 'js-badge',
+    import { selectBackgroundColor } from '../helpers/bg-color';
+    import { selectFontColor }       from '../helpers/font-color';
 
-    components : {},
+    export default {
+        name : 'js-badge',
 
-    mounted() {
-      //
-    },
+        props : {
+            state   : {
+                default : `primary`,
+                type    : String,
+            },
+            outside : {
+                default : false,
+                type    : Boolean,
+            }
+        },
 
-    created() {
-      //
-    },
-  }
+        components : {},
+
+        computed : {
+            /**
+             * @return {string}
+             */
+            getBackgroundColorState() {
+                return selectBackgroundColor(this.state, this.outside);
+            },
+
+            /**
+             * @return {string}
+             */
+            getFontColorState() {
+                return selectFontColor(this.state, this.outside);
+            },
+        },
+
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

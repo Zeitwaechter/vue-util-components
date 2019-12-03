@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-post',
+    export default {
+        name : 'js-post',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-tooltip',
+    export default {
+        name : 'js-tooltip',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

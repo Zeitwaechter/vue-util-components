@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-dislike',
+    export default {
+        name : 'js-dislike',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

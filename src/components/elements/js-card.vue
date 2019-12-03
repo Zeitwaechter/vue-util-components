@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-card',
+    export default {
+        name : 'js-card',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

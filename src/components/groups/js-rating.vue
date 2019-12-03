@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-rating',
+    export default {
+        name : 'js-rating',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

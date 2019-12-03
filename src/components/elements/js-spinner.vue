@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-spinner',
+    export default {
+        name : 'js-spinner',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

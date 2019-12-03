@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-table-head',
+    export default {
+        name : 'js-table-head',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

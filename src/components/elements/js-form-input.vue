@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-form-input',
+    export default {
+        name : 'js-form-input',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-modal',
+    export default {
+        name : 'js-modal',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

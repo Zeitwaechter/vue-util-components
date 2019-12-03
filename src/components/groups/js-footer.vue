@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-footer',
+    export default {
+        name : 'js-footer',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

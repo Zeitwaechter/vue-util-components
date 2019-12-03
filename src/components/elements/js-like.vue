@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-like',
+    export default {
+        name : 'js-like',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

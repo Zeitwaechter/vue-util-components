@@ -11,17 +11,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-partial',
+    export default {
+        name : 'js-partial',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

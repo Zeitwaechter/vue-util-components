@@ -6,17 +6,24 @@
 
 <script>
     // @info maybe redundant to figure
-  export default {
-    name : 'js-thumbnail',
+    export default {
+        name : 'js-thumbnail',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

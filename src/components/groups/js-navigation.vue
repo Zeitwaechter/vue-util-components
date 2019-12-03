@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-navigation',
+    export default {
+        name : 'js-navigation',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

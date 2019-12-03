@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-slider',
+    export default {
+        name : 'js-slider',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

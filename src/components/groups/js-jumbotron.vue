@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-jumbotron',
+    export default {
+        name : 'js-jumbotron',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  };
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    };
 </script>

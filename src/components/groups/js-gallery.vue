@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-gallery',
+    export default {
+        name : 'js-gallery',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>

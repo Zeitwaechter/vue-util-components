@@ -5,17 +5,24 @@
 </template>
 
 <script>
-  export default {
-    name : 'js-breadcrumbs',
+    export default {
+        name : 'js-breadcrumbs',
 
-    components : {},
+        components : {},
 
-    mounted() {
-      //
-    },
+        computed : {
+        },
 
-    created() {
-      //
-    },
-  }
+        methods : {
+            //
+        },
+
+        mounted() {
+            //
+        },
+
+        created() {
+            //
+        },
+    }
 </script>
